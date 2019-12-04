@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="vpad--xxl">
+  <div class="container">
+    <div class="width width--xl text--center text--xxl">
+      <p>{{site.description}}</p>
+    </div>
+    <div class="space--md"></div>
+    <div class="width width--xl">
+      <div class="js-video">
+        <video src="{{site.baseurl}}/_assets/video/dicover-the-romantic-side-to-germany.mp4" controls poster="{{site.img}}/content/video-thumbnail.jpg" controlsList="nodownload"></video>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="vpad--xxl bg--light">
+  <div class="container">
+    <div class="row row--6-6">
+      {% assign category-pages = site.html_pages | where: 'layout', 'category' | sort: 'nav-order' %}
+      {% for page in category-pages %}
+        <div class="col">
+          <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');">
+            <a href="{{site.baseurl}}{{page.url}}" class="bg-img__link"></a>
+            <div class="bg-img__bg-overlay"></div>
+            <div class="bg-img__content">
+              <div class="title title--lg">{{page.title}}</div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="js-game"></div>
+
+{% include page/promo-competition.html %}

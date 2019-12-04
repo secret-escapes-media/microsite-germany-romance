@@ -1,1 +1,24 @@
 // general styles for the project that wouldn't be a reuseable component
+
+.airport {
+  display: inline-block;
+  padding: $s-4 $s-1;
+  font-size: $s-1;
+  font-weight: 600;
+  line-height: 1;
+  background-color: red;
+  border-radius: 60px;
+  background-color: $grey-lightest;
+  &--white { background-color: $white; }
+  &:before {
+    content: '';
+    display: inline-block;
+    width: $s0;
+    height: $s0;
+    margin-right: $s-4;
+    background-image: url('../img/icons/plane.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+  }
+}

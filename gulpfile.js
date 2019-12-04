@@ -11,6 +11,7 @@ var concat       = require('gulp-concat');
 var uglify       = require('gulp-uglify');
 var image        = require('gulp-image');
 var htmlmin      = require('gulp-htmlmin');
+var babel        = require('gulp-babel');
 
 
 /////////////////////////////////////////////////////////////////////  utilities
@@ -22,11 +23,14 @@ function cleanAssets() {
 
 // start browserSync local server and show under site subdirectory
 function browserSyncServe() {
+  const baseurl = '/uk/2020/romance-in-germany';
   browserSync.init({
+    baseDir: '_site/',
+    ui: false,
+    startPath: baseurl,
     server: {
-      baseDir: '_site/',
       routes: {
-        '/template': '_site/'
+        [baseurl]: '_site/'
       }
     }
   });
@@ -67,6 +71,12 @@ function buildImages() {
   .pipe(gulp.dest('./_site/_assets/img/'));
 }
 
+// build for video files
+function buildVideo() {
+  return gulp.src('./_assets/video/**/*.*')
+  .pipe(gulp.dest('./_site/_assets/video/'));
+}
+
 // build for main js file
 function buildJsMain(cb) {
   return gulp.src([
@@ -91,7 +101,7 @@ function buildJsMain(cb) {
     './_assets/js/_components/form/functions.js',
     './_assets/js/_components/form/validation.js',
     './_assets/js/_components/competition.js',
-    './_assets/js/_components/simple-form.js',
+    // './_assets/js/_components/simple-form.js',
 
     // custom js for project
     './_assets/js/main.js',
@@ -170,7 +180,22 @@ function compressSass() {
 
 // compress js files for live
 function compressJs() {
-  return gulp.src('./_site/_assets/js/**/*.js')
+  return gulp.src('./_site/_assets/js/main.js')
+  .pipe(uglify())
+  .pipe(gulp.dest('./_site/_assets/js'));
+}
+
+// compile overview.js with babel
+function compileJsBabel() {
+  return gulp.src('./_site/_assets/js/overview.js')
+  // Transpile the JS code using Babel's preset-env.
+  .pipe(babel({
+    presets: [
+      ['@babel/env', {
+        modules: false
+      }]
+    ]
+  }))
   .pipe(uglify())
   .pipe(gulp.dest('./_site/_assets/js'));
 }
@@ -209,7 +234,8 @@ var build = gulp.series(
     buildSass,
     buildImages,
     buildJsMain,
-    buildJs
+    buildJs,
+    buildVideo
   )
 );
 var compress = gulp.parallel(
@@ -217,7 +243,8 @@ var compress = gulp.parallel(
   compressSass,
   compressJs,
   compressImages,
-  compressHtml
+  compressHtml,
+  gulp.series(compileJsBabel)
 );
 
 // build and watch site for development

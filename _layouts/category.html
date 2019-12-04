@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<div class="vpad--xxl">
+  <div class="container">
+    <div class="width width--xl text--center text--xxl">
+      <p>{{page.intro}}</p>
+    </div>
+  </div>
+</div>
+
+<div id="{{page.feature.id}}" class="vpad--xxl bg--light">
+  <div class="container">
+    <h3 class="sub-title">Spotlight on</h3>
+    <h2 class="title title--xl">{{page.feature.title}}</h2>
+    {% if page.feature.airport %}<div class="airport airport--white">Nearest airport is {{page.feature.airport}}</div>{% endif %}
+    <p class="width--xl text--xxl">{{page.feature.description}}</p>
+    <div class="vpad--md">
+      <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/img.jpg');">
+        {% include components/image-attribution.html text=page.feature.image-attribution %}
+      </div>
+    </div>
+    <div class="space--md"></div>
+    <div class="row row--4-4-4 row--gutters-lg">
+      {% for topic in page.feature.topics %}
+        <div class="col">
+          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg');">
+            {% include components/image-attribution.html text=topic.image-attribution %}
+          </div>
+          <div class="vpad--xs">
+            <h4 class="title title--sm">{{topic.title}}</h4>
+            <p>{{topic.description}}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="vpad--xxl">
+  <div class="container">
+    <div class="row row--6-6 row--gutters-lg">
+      {% for destination in page.destinations %}
+        <div class="col">
+          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg');">
+            {% include components/image-attribution.html text=destination.image-attribution %}
+          </div>
+          <div class="vpad--xs">
+            <h4 class="title title--md">{{destination.title}}</h4>
+            {% if destination.airport %}<div class="airport">Nearest airport is {{destination.airport}}</div>{% endif %}
+            <p class="text--xl">{{destination.description}}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% include page/promo-competition.html %}

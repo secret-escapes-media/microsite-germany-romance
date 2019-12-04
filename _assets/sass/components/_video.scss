@@ -1,0 +1,55 @@
+video { width: 100%; }
+
+.js-video {
+  video {
+    display: block;
+    visibility: hidden;
+    .no-js & { visibility: visible; }
+  }
+}
+
+.thumbnail {
+  position: relative;
+  background-color: $black;
+  cursor: pointer;
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: $z-content-upper;
+      @include transition;
+    }
+  }
+  &__play-icon {
+    $size: 7.5rem;
+    $size-sm: $size / 1.25;
+    $size-md: $size;
+    $size-lg: $size * 1.25;
+    position: relative;
+    z-index: $z-content-overlay;
+    width: $size-sm;
+    height: $size-sm;
+    background-image: url('../img/icons/play.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform-origin: center center;
+    @include bp($lg) { width: $size-md; height: $size-md; }
+    @include bp($xl) { width: $size-lg; height: $size-lg; }
+    @include transition;
+  }
+  &:hover &__play-icon { transform: scale(1.1); }
+  &:hover &__bg:before { background-color: rgba($black, .25); }
+}
