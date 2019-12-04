@@ -86,12 +86,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // add all classes & atrributes
   container.classList = 'container container--xxl vpad--xxl';
   intro.classList = 'text--center';
-  title.classList = 'title title--md';
+  title.classList = 'title title--xl';
   description.classList = 'width width--lg text--xxl';
   game.classList =
     'space--md row row--constant-6-6 row--sm-4-4-4 row--lg-3-3-3-3 row--no-gutters';
   bottom.classList = 'text--center space--lg';
-  button.classList = 'btn btn--lg btn--orange';
+  button.classList = 'btn btn--lg btn--red';
   button.setAttribute('href', '#');
 
   // add all text
@@ -180,7 +180,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // remove current image grid and add in step2
       game.innerHTML = null;
       title.innerText = 'Choose another 5 images';
-      title.classList.add('title--xs');
+      title.classList.add('title--lg');
       description.remove();
       buildImageGrid(data.shortlist, 'step02', 6);
     } else {
@@ -201,18 +201,18 @@ document.addEventListener('DOMContentLoaded', function() {
       container.innerHTML = null;
       container.innerHTML = `
       <div class="width width--xl text--center">
-        <h3 class="sub-title">You should be heading for...</h3>
-        <h2 class="title title--xl">${data.final.name}</h2>
+        <h3 class="sub-title sub-title--sm">You should be heading for...</h3>
+        <h2 class="title title--xxxl">${data.final.name}</h2>
         <div class="space--lg"></div>
         <div class="bg-img bg-img--16-9" style="background-image:url('${data.final.result.image}')"></div>
         <div class="space--sm"></div>
         <p class="width width--lg text--xxl">${data.final.result.description}</p>
         <div class="space--md"></div>
         <div>
-          <a href="${data.final.result.links.offer}" class="btn btn--orange">See ${data.final.name} offers</a>
+          <a href="${data.final.result.links.offer}" class="btn btn--red">See ${data.final.name} offers</a>
         </div>
         <div class="space--sm">
-          <a href="${data.final.result.links.more}" class="btn btn--outline btn--outline-orange btn--sm">Find Out More</a>
+          <a href="${data.final.result.links.more}" class="btn btn--outline btn--outline-red btn--sm">Find Out More</a>
         </div>
       </div>
       `;

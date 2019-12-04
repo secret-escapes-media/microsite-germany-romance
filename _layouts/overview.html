@@ -2,12 +2,15 @@
 layout: default
 ---
 
-<div class="vpad--xxl">
+<div class="vpad--xl">
   <div class="container">
-    <div class="width width--xl text--center text--xxl">
-      <p>{{site.description}}</p>
+    <div class="text--center">
+      <div class="width width--xxl">
+        <p class="title title--sm">Fairytale castles and riverside villages, baroque spa towns and medieval grandeur – Germany is a hotbed of effortless romance.</p>
+      </div>
+      <p class="width width--xl text--xl">{{site.description}}</p>
     </div>
-    <div class="space--md"></div>
+    <div class="space--lg"></div>
     <div class="width width--xl">
       <div class="js-video">
         <video src="{{site.baseurl}}/_assets/video/dicover-the-romantic-side-to-germany.mp4" controls poster="{{site.img}}/content/video-thumbnail.jpg" controlsList="nodownload"></video>
@@ -22,11 +25,11 @@ layout: default
       {% assign category-pages = site.html_pages | where: 'layout', 'category' | sort: 'nav-order' %}
       {% for page in category-pages %}
         <div class="col">
-          <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/img.jpg');">
+          <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/bg.jpg');">
             <a href="{{site.baseurl}}{{page.url}}" class="bg-img__link"></a>
             <div class="bg-img__bg-overlay"></div>
             <div class="bg-img__content">
-              <div class="title title--lg">{{page.title}}</div>
+              <div class="title title--xxl">{{page.title}}</div>
             </div>
           </div>
         </div>

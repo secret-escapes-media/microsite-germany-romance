@@ -34,9 +34,10 @@
     right: 0;
     bottom: 0;
     z-index: $z-content;
+    background-color: rgba($black,.25);
     @include transition;
   }
-  &:hover &__bg-overlay { background-color: rgba($black,.25); }
+  &:hover &__bg-overlay { background-color: rgba($black,.5); }
   &__attribution {
     position: absolute;
     right: 0;

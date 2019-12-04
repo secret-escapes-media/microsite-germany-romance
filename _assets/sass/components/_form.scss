@@ -59,7 +59,7 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
-  background: $orange;
+  background: $g-red;
   color: $white;
   padding: $s2 $s5;
   font-family: $font-core;
@@ -77,7 +77,7 @@
 }
 .boilerform .c-button:hover,
 .boilerform .c-button:focus {
-  background: $orange-dark;
+  background: darken($g-red, 5);
 }
 .boilerform .c-button:disabled {
   opacity: .5;

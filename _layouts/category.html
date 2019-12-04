@@ -4,7 +4,7 @@ layout: default
 
 <div class="vpad--xxl">
   <div class="container">
-    <div class="width width--xl text--center text--xxl">
+    <div class="width width--xl text--center title title--xs">
       <p>{{page.intro}}</p>
     </div>
   </div>
@@ -12,8 +12,8 @@ layout: default
 
 <div id="{{page.feature.id}}" class="vpad--xxl bg--light">
   <div class="container">
-    <h3 class="sub-title">Spotlight on</h3>
-    <h2 class="title title--xl">{{page.feature.title}}</h2>
+    <h3 class="sub-title sub-title--sm">Spotlight on</h3>
+    <h2 class="title title--xxl">{{page.feature.title}}</h2>
     {% if page.feature.airport %}<div class="airport airport--white">Nearest airport is {{page.feature.airport}}</div>{% endif %}
     <p class="width--xl text--xxl">{{page.feature.description}}</p>
     <div class="vpad--md">
@@ -29,7 +29,7 @@ layout: default
             {% include components/image-attribution.html text=topic.image-attribution %}
           </div>
           <div class="vpad--xs">
-            <h4 class="title title--sm">{{topic.title}}</h4>
+            <h4 class="title title--md">{{topic.title}}</h4>
             <p>{{topic.description}}</p>
           </div>
         </div>
@@ -46,8 +46,8 @@ layout: default
           <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg');">
             {% include components/image-attribution.html text=destination.image-attribution %}
           </div>
-          <div class="vpad--xs">
-            <h4 class="title title--md">{{destination.title}}</h4>
+          <div class="vpad--xxs">
+            <h4 class="title title--lg">{{destination.title}}</h4>
             {% if destination.airport %}<div class="airport">Nearest airport is {{destination.airport}}</div>{% endif %}
             <p class="text--xl">{{destination.description}}</p>
           </div>
