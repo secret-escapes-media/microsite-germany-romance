@@ -78,40 +78,60 @@ document.addEventListener('DOMContentLoaded', function() {
   const container = document.createElement('div');
   const intro = document.createElement('div');
   const title = document.createElement('h2');
+  const secondTitle = document.createElement('h2');
   const description = document.createElement('p');
+  const instruction = document.createElement('p');
   const game = document.createElement('div');
   const bottom = document.createElement('div');
   const button = document.createElement('a');
 
+  // save special classes
+  const imageSelectClass = 'js-game-image';
+  const selectedClass = 'is-selected';
+  const maxSelectedClass = 'has-limit';
+
   // add all classes & atrributes
-  container.classList = 'container container--xxl vpad--xxl';
-  intro.classList = 'text--center';
-  title.classList = 'title title--xl';
-  description.classList = 'width width--lg text--xxl';
-  game.classList =
-    'space--md row row--constant-6-6 row--sm-4-4-4 row--lg-3-3-3-3 row--no-gutters';
-  bottom.classList = 'text--center space--lg';
-  button.classList = 'btn btn--lg btn--red';
+  container.classList.add('container', 'container--xxl', 'vpad--xxl');
+  intro.classList.add('text--center');
+  title.classList.add('title', 'title--xl');
+  secondTitle.classList.add('title', 'title--lg');
+  description.classList.add('width', 'width--lg', 'text--lg');
+  instruction.classList.add('width', 'width--lg', 'text--xxl', 'text--bold');
+  game.classList.add(
+    'space--md',
+    'row',
+    'row--constant-6-6',
+    'row--sm-4-4-4',
+    'row--lg-3-3-3-3',
+    'row--no-gutters'
+  );
+  bottom.classList.add('game-submit', 'text--center', 'space--lg');
+  button.classList.add('btn', 'btn--red');
   button.setAttribute('href', '#');
 
   // add all text
   title.innerText = 'Where is your romantic Germany?';
+  secondTitle.innerText = 'Choose another 5 images';
   description.innerText =
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus hic asperiores similique cum dignissimos impedit explicabo nulla sit.';
+  instruction.innerText = 'Choose 5 images';
   button.innerText = 'Submit Images';
 
-  // combine all elments into the final html
-  container.append(intro, game, bottom);
-  intro.append(title, description);
-  bottom.append(button);
-  target.append(container);
-
-  // create all of the images for the first step
+  // create generic image element for cloning
   const imageWrap = document.createElement('div');
   const image = document.createElement('div');
-  imageWrap.classList = 'col';
-  image.classList = 'js-image-thing bg-img bg-img--1-1 text--white';
+  imageWrap.classList.add('col');
+  image.classList.add(
+    imageSelectClass,
+    'game-image',
+    'bg-img',
+    'bg-img--1-1',
+    'text--white',
+    'text--xxl'
+  );
+  image.setAttribute('tabindex', '0');
 
+  // create image grid for each step of the game
   function buildImageGrid(array, step, amount) {
     // store html before page input
     const html = [];
@@ -128,7 +148,6 @@ document.addEventListener('DOMContentLoaded', function() {
           }/${step}-0${i + 1}.jpg')`
         );
         newImage.setAttribute('data-city', city.id);
-        newImage.classList.add('text--white', 'text--xxl');
         newImageWrap.append(newImage);
         html.push(newImageWrap);
       }
@@ -136,12 +155,65 @@ document.addEventListener('DOMContentLoaded', function() {
     // randomise the order and output to page
     shuffle(html);
     html.map(el => game.append(el));
+    // add click event for each image
+    document
+      .querySelectorAll(`.${imageSelectClass}`)
+      .forEach(el => imageSelect(el, step));
+    // create a marker for which step of the game is current
+    game.setAttribute('data-step', step);
   }
 
-  // create the first step of images
-  buildImageGrid(data.cities, 'step01', 3);
+  // select images function
+  function imageSelect(el, step) {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      const city = this.dataset.city;
+      const isSelected = this.classList.contains(selectedClass);
+      const removeImage = () => {
+        const arrPos = data.selection[step].indexOf(city);
+        data.selection[step].splice(arrPos, 1);
+        this.classList.remove(selectedClass);
+      };
+      // create arrays to track selected images
+      if (!data.selection) data.selection = [];
+      if (!data.selection[step]) data.selection[step] = [];
+      // only allow 5 selected images
+      if (data.selection[step].length === 5) {
+        if (isSelected) removeImage();
+      } else {
+        // is image already selected?
+        if (isSelected) {
+          removeImage();
+        } else {
+          data.selection[step].push(city);
+          this.classList.add(selectedClass);
+        }
+      }
+      if (data.selection[step].length === 5) {
+        target.classList.add(maxSelectedClass);
+      } else {
+        target.classList.remove(maxSelectedClass);
+      }
+    });
+  }
 
-  // which two cities are the most common
+  // reset window scroll position so title is always visible
+  function resetGameScroll() {
+    document.documentElement.scrollTop = container.offsetTop;
+  }
+
+  // add all elements for the first step of the game
+  function createFirstStep() {
+    // combine all elments into the final html
+    container.append(intro, game, bottom);
+    intro.append(title, description, instruction);
+    bottom.append(button);
+    target.append(container);
+    // create the first step of images
+    buildImageGrid(data.cities, 'step01', 3);
+  }
+
+  // find which two cities are the most common
   function findChosenCities(choices) {
     const cityCount = choices.reduce((tally, choice) => {
       if (!tally[choice]) {
@@ -161,42 +233,38 @@ document.addEventListener('DOMContentLoaded', function() {
       }, []);
   }
 
-  // select images function
+  // initalise the game
+    // this is where it needs to check the browser if there is an answer
+    if (window.localStorage.getItem('rig-game-result')) {
+      console.log(data.cities.find(item => item.id === window.localStorage.getItem('rig-game-result')));
+    } else {
+      createFirstStep();
+    }
 
-  // submit images function
+
+  // submit images button function
   button.addEventListener('click', e => {
     e.preventDefault();
-    if (!data.selection) {
-      // temp for selecting rando images
-      var myFirstSelection = [];
-      document
-        .querySelectorAll('.js-image-thing')
-        .forEach(thang => myFirstSelection.push(thang.dataset.city));
-      myFirstSelection.splice(5);
-      // actual code
-      data.selection = [];
-      data.selection.push(myFirstSelection);
-      data.shortlist = findChosenCities(myFirstSelection);
-      // remove current image grid and add in step2
+    const currentStep = game.dataset.step;
+    if (currentStep === 'step01') {
+      // find winners, clear html, create step 2 images
+      data.shortlist = findChosenCities(data.selection[currentStep]);
       game.innerHTML = null;
-      title.innerText = 'Choose another 5 images';
-      title.classList.add('title--lg');
+      intro.append(secondTitle);
+      title.remove();
       description.remove();
+      instruction.remove();
+      target.classList.remove(maxSelectedClass);
       buildImageGrid(data.shortlist, 'step02', 6);
-    } else {
-      // temp for selecting rando images
-      var mySecondSelection = [];
-      document
-        .querySelectorAll('.js-image-thing')
-        .forEach(thang => mySecondSelection.push(thang.dataset.city));
-      mySecondSelection.splice(5);
-      // actual code
-      data.selection.push(mySecondSelection);
-      data.final = findChosenCities(mySecondSelection)[0];
+    } else if (currentStep === 'step02') {
+      // find winner, clear html, show result
+      data.final = findChosenCities(data.selection[currentStep])[0];
+      window.localStorage.setItem('rig-game-result', data.final.id);
+
       // would be good to save this final result on local storage, that way if people navigate away they can still get their resilt
-      // could even put in
 
       // remove current image grid and show the result
+      target.classList.remove(maxSelectedClass);
       game.remove();
       container.innerHTML = null;
       container.innerHTML = `
@@ -212,12 +280,30 @@ document.addEventListener('DOMContentLoaded', function() {
           <a href="${data.final.result.links.offer}" class="btn btn--red">See ${data.final.name} offers</a>
         </div>
         <div class="space--sm">
-          <a href="${data.final.result.links.more}" class="btn btn--outline btn--outline-red btn--sm">Find Out More</a>
+          <a href="${data.final.result.links.more}" class="btn btn--outline btn--outline-red btn--sm">Find Out More</a> <a href="#" class="js-game-reset btn btn--outline btn--outline-red btn--sm">Choose again?</a>
         </div>
       </div>
       `;
+      resetGame();
     }
-    // // reset the scroll position to the top of the game
-    // document.documentElement.scrollTop = container.offsetTop;
+    resetGameScroll();
   });
+
+  // reset game function
+  function resetGame() {
+    const reset = document.querySelector('.js-game-reset');
+    reset.addEventListener('click', function(e) {
+      e.preventDefault();
+      // clean data & html
+      delete data.final;
+      delete data.shortlist;
+      delete data.selection;
+      container.innerHTML = null;
+      game.innerHTML = null;
+      intro.innerHTML = null;
+      // recreate first step of game
+      createFirstStep();
+      resetGameScroll();
+    });
+  }
 });

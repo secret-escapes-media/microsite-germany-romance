@@ -23,3 +23,25 @@
     vertical-align: middle;
   }
 }
+
+.game-image {
+  &.is-selected {
+    background-image: none !important;
+    background-color: darkblue !important;
+  }
+  .has-limit &.is-selected {
+    background-color: blue !important;
+  }
+}
+
+.game-submit {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: $z-content-overlay;
+  display: none;
+  background-color: rgba($white, .85);
+  padding: $s0 $s1;
+  .has-limit & { display: block; }
+}
