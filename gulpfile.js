@@ -244,7 +244,7 @@ var compress = gulp.parallel(
   compressJs,
   compressImages,
   compressHtml,
-  gulp.series(compileJsBabel)
+  compileJsBabel
 );
 
 // build and watch site for development
