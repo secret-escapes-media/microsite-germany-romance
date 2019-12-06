@@ -29,9 +29,9 @@ feature:
       description: Though the war destroyed a great many of Nuremberg’s old buildings, many were painstakingly rebuilt brick-by-brick. It’s undeniable that the city retains its old-world grandeur; turrets and spires, brightly-painted timber-framed shops, and of course, the grand castle. Marvel at the rich interiors and intricate facades of the city’s three medieval churches, the Frauenkirche, St Lorenz, and the oldest, the 13th-century St Sebalduskirche. Walk the old city walls, marvel at the ostentatious 14th-century fountain in the main square, and have a beer in the river-spanning, 700-year-old hospital-turned-bar.
       image-attribution: >
         <a href="#photo-link">Photo</a> by username / <a rel="nofollow" href="https://creativecommons.org/licenses/by/2.0/">CC BY</a>
-    - id: twentieth-century-history
-      title: 20th Century History
-      description: There’s no escaping Nuremberg’s dark past. But confronting it and understanding it is something the modern city excels at. The nazi parade grounds are an interesting spectacle, their vastness and striking architecture adding context to the megolomanical rallies of the thirties. The nearby Documentation Centre goes even further, with an incredible exhibition delving into the cult of personality of Hitler. Then there’s the eponymous trials; a visit to the courtroom is a good way to round off any sift through this dark past, where justice prevailed and Germany began to start on its journey of rebuilding itself into the vibrant, diverse and brilliant place that it is today.
+    - id: high-art
+      title: High Art
+      description: Nuremberg is a champion of the arts, historically and to this day. The city’s most famous artist, Albrecht Dürer, had his home and workshop here, now lovingly restored and open to the public. He was Germany’s most important Renaissance artist – see how he lived, then pop along to the impressive Germanic National Museum to see some of his best works, alongside luminaries like Veit Stoß and Rembrandt. For something a little more modern, head to the Neues Museum, which traces the history of design from the post-war era to the present day.
       image-attribution: >
         <a href="#photo-link">Photo</a> by username / <a rel="nofollow" href="https://creativecommons.org/licenses/by/2.0/">CC BY</a>
 
