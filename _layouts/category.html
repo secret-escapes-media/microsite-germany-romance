@@ -17,7 +17,7 @@ layout: default
     {% if page.feature.airport %}<div class="airport airport--white">Nearest airport is {{page.feature.airport}}</div>{% endif %}
     <p class="width--xl text--xxl">{{page.feature.description}}</p>
     <div class="vpad--md">
-      <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/img.jpg');">
+      <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/{{page.feature.id}}.jpg');">
         {% include components/image-attribution.html text=page.feature.image-attribution %}
       </div>
     </div>
@@ -25,7 +25,7 @@ layout: default
     <div class="row row--4-4-4 row--gutters-lg">
       {% for topic in page.feature.topics %}
         <div class="col">
-          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg');">
+          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{topic.id}}.jpg');">
             {% include components/image-attribution.html text=topic.image-attribution %}
           </div>
           <div class="vpad--xs">
@@ -43,7 +43,7 @@ layout: default
     <div class="row row--6-6 row--gutters-lg">
       {% for destination in page.destinations %}
         <div class="col">
-          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/img.jpg');">
+          <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{destination.id}}.jpg');">
             {% include components/image-attribution.html text=destination.image-attribution %}
           </div>
           <div class="vpad--xxs">

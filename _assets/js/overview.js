@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         id: 'baden-baden',
         name: 'Baden-Baden',
         result: {
-          image: `${baseurl}/_assets/img/img.jpg`,
+          image: `${baseurl}/_assets/img/content/wellness/baden-baden.jpg`,
           description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus hic asperiores similique cum dignissimos impedit explicabo nulla sit.',
           links: {
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
         id: 'heidelberg',
         name: 'Heidelberg',
         result: {
-          image: `${baseurl}/_assets/img/img.jpg`,
+          image: `${baseurl}/_assets/img/content/classic/heidelberg.jpg`,
           description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus hic asperiores similique cum dignissimos impedit explicabo nulla sit.',
           links: {
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         id: 'nuremberg',
         name: 'Nuremberg',
         result: {
-          image: `${baseurl}/_assets/img/img.jpg`,
+          image: `${baseurl}/_assets/img/content/culture/nuremberg.jpg`,
           description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus hic asperiores similique cum dignissimos impedit explicabo nulla sit.',
           links: {
@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
         id: 'aschaffenburg',
         name: 'Aschaffenburg',
         result: {
-          image: `${baseurl}/_assets/img/img.jpg`,
+          image: `${baseurl}/_assets/img/content/secret/aschaffenburg.jpg`,
           description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus hic asperiores similique cum dignissimos impedit explicabo nulla sit.',
           links: {
