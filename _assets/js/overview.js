@@ -126,7 +126,6 @@ document.addEventListener('DOMContentLoaded', function() {
       for (let i = 0; i < amount; i++) {
         const newImageWrap = imageWrap.cloneNode();
         const newImage = image.cloneNode();
-        newImage.innerText = `${city.name} ${step} 0${i + 1}`;
         newImage.setAttribute(
           'style',
           `background-image: url('${baseurl}/_assets/img/game/${
