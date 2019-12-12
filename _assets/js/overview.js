@@ -103,17 +103,12 @@ document.addEventListener('DOMContentLoaded', function() {
   // ---------------------------------------------------------------------------
   // create generic image element for cloning
   // ---------------------------------------------------------------------------
+  const col = document.createElement('div');
   const imageWrap = document.createElement('div');
   const image = document.createElement('div');
-  imageWrap.classList.add('col');
-  image.classList.add(
-    imageSelectClass,
-    'game-image',
-    'bg-img',
-    'bg-img--1-1',
-    'text--white',
-    'text--xxl'
-  );
+  col.classList.add('col');
+  imageWrap.classList.add(imageSelectClass, 'game-image');
+  image.classList.add('bg-img', 'bg-img--1-1');
   image.setAttribute('tabindex', '0');
 
   // ---------------------------------------------------------------------------
@@ -124,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function() {
     array.map(city => {
       // loop through each city and put out the requested amount of images
       for (let i = 0; i < amount; i++) {
+        const newCol = col.cloneNode();
         const newImageWrap = imageWrap.cloneNode();
         const newImage = image.cloneNode();
         newImage.setAttribute(
@@ -132,9 +128,10 @@ document.addEventListener('DOMContentLoaded', function() {
             city.id
           }/${step}-0${i + 1}.jpg')`
         );
-        newImage.setAttribute('data-city', city.id);
+        newImageWrap.setAttribute('data-city', city.id);
         newImageWrap.append(newImage);
-        html.push(newImageWrap);
+        newCol.append(newImageWrap);
+        html.push(newCol);
       }
     });
     shuffle(html); // randomise the order

@@ -24,13 +24,63 @@
   }
 }
 
+.game {
+  position: relative;
+}
+
 .game-image {
+  position: relative;
+  &:focus { outline: none; }
+  &:before {
+    // image overlay
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content-upper;
+    @include transition;
+  }
+  &:after {
+    // tick icon
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: $z-content-upper;
+    display: block;
+    width: 0;
+    height: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url('../img/icons/tick.svg');
+    opacity: 0;
+    transform-origin: center;
+    @include transition;
+  }
   &.is-selected {
-    background-image: none !important;
-    background-color: darkblue !important;
+    &:before {
+      background-color: rgba($grey-darkest, .6);
+    }
+    &:after {
+      width: 40%;
+      height: 40%;
+      opacity: 1;
+      @include bp($lg) {
+        width: 33.33%;
+        height: 33.33%;
+      }
+    }
   }
   .has-limit &.is-selected {
-    background-color: blue !important;
+    &:before {
+      background-color: rgba($grey-darkest, .85);
+    }
   }
 }
 
