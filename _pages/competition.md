@@ -6,9 +6,25 @@ nav: true
 nav-order: 7
 
 title: Compet&shy;ition
-long-title: Win a romantic 3 night stay in Heidelberg
-intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aspernatur beatae tempora, voluptates ut recusandae ea exercitationem culpa mollitia quia similique. Perferendis cumque obcaecati ad pariatur. Quos iure sapiente amet beatae, officiis possimus minima expedita, ea ad. Doloribus et perspiciatis doloremque. Tenetur consequatur quam maiores odit, adipisci nostrum numquam quo mollitia eligendi! Debitis, culpa impedit, ex esse fugit enim quibusdam!
+long-title: Win a romantic escape to gorgeous Heidelberg...
+intro: Here’s your chance to win an unmissable romantic getaway to one of Germany’s most beautiful towns – picture-perfect Heidelberg. Sat next to a sparkling river, watched over by a romantic castle and surrounded by dark green forest glades, Heidelberg has been a popular beauty spot for centuries. Now you too can explore its pretty cobbled streets, with incredible romantic experiences included for a truly spellbinding getaway.
 enter-cta: Enter Now
+
+
+features:
+
+  - id: the-stay
+    title: The Stay
+    description: You’ll spend three nights at the Crowne Plaza Heidelberg, with flights included. As you arrive, you’ll be treated to dinner at the hotel, before a good night’s rest in the well-appointed rooms. Enjoy breakfast each morning before exploring Heidelberg’s unique charms.
+
+  - id: a-unique-tour
+    title: A Unique Tour
+    description: On your first full day, some real treats await. Enjoy a private guided tour through Heidelberg’s old town. Then, hop into a Piaggio Ape for a rather special tour of the castle grounds. Afterwards, indulge in an exclusive reception at the castle, where German sparkling wines accompany brilliant views over the town and surrounding hills.
+
+  - id: michelin-dining
+    title: Michelin Dining
+    description: "To round off your day, head to the castle’s Michelin restaurant: the illustrious Scharffs Schlossweinstube. Greeted by the head chef on arrival, you’ll be treated to a five-course, candlelit dinner. The following day, you and your loved one will have some personal time to explore Heidelberg at your own pace, with a HeidlebergCard in pocket; free public transport and unique savings in shops and restaurants to take advantage of."
+
 
 banner:
   attribution: >
