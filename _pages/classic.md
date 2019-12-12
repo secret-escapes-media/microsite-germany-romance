@@ -14,7 +14,7 @@ banner:
 feature:
   id: heidelberg
   title: Heidelberg
-  description: Heidelberg is just one of those picture-perfect towns. Surrounded by dark-green forest, slung along a sparkling river and overlooked by a gothic-cum-renaissance castle perched high on a hill, an image of Heidelberg stirs the inner romantic. Also the real Romantics; William Turner and Goethe were both totally infatuated with the place, crafting verse and landscapes that capture the wild beauty of the town. Wander the cobbled streets of the marvellous baroque old town and sink in to the historic student atmosphere, centred around Germany’s oldest university.
+  description: Heidelberg is just one of those picture-perfect towns. Surrounded by dark-green forest, slung along a sparkling river and overlooked by a gothic-cum-renaissance castle perched high on a hill, an image of Heidelberg stirs the inner romantic. Also the real Romantics; William Turner and Goethe were both totally infatuated with the place, crafting verse and landscapes that capture the wild beauty of the town. As Goethe put it, “The town with its location and beautiful surroundings, has, one may say, something special.” Discover this for yourself by wandering the cobbled streets of the marvellous baroque old town and sinking into the historic student atmosphere, centred around Germany’s oldest university.
   airport: AIRPORT NAME
   image-attribution: >
     <a href="#photo-link">Photo</a> by username / <a rel="nofollow" href="https://creativecommons.org/licenses/by/2.0/">CC BY</a>
@@ -38,7 +38,7 @@ feature:
 destinations:
   - id: rothenburg
     title: Rothenburg
-    description: This remarkable Bavarian village, with its topsy-turvy, bright and colourful medieval buildings and narrow, twisting picturesque lanes, is as fairytale pretty as it gets. Surrounded by high walls and tall, round turrets, Rothenburg is a time capsule of picture-perfect sights slung on the famed Romantic Way. For all-out romance, don’t miss this classic slice of medieval beauty.
+    description: This remarkable Bavarian village, with its topsy-turvy, bright and colourful medieval buildings and narrow, twisting, picturesque streets, is as fairytale pretty as it gets. Surrounded by high walls and tall, round turrets, Rothenburg is a time capsule of picture-perfect sights slung on the famed Romantic Way. For all-out romance, don’t miss this classic slice of medieval beauty.
     airport: AIRPORT NAME
     image-attribution: >
       <a href="#photo-link">Photo</a> by username / <a rel="nofollow" href="https://creativecommons.org/licenses/by/2.0/">CC BY</a>

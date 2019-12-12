@@ -5,7 +5,7 @@ permalink: /wellness/
 title: Wellness
 nav: true
 nav-order: 3
-intro: Nothing is quite as rewarding than heading to one of Germany’s famous spa towns. Indulge yourself, and your loved one if need be, in some of the finest wellness retreats in Europe...
+intro: Nothing is quite as rewarding than heading to one of Germany’s famous spa towns. Indulge yourself and your loved one, in some of the finest wellness retreats in Europe...
 
 banner:
   attribution: >
@@ -14,7 +14,7 @@ banner:
 feature:
   id: baden-baden
   title: Baden-Baden
-  description: Baden-Baden is the most famous spa town in Germany, with an old-world grandeur and style unparalleled. Sink into the aristocratic set, where regal thermal baths sit alongside opera houses and colourful belle-epoque townhouses. If you can bear to tear yourself away from the thermal waters of Baden-Baden’s many spas, you can indulge in boutique shopping, Michelin dining, and sampling wines from the region that surrounds it. If that’s enough, head into the nearby Black Forest for truly beguiling outdoor adventure.
+  description: Baden-Baden is the most famous spa town in Germany, with an old-world grandeur and style unparalleled. Sink into the finer things, where gorgeous thermal baths sit alongside opera houses and colourful belle-epoque townhouses. If you can bear to tear yourself away from the thermal waters of Baden-Baden’s many spas, you can indulge in boutique shopping, Michelin dining, and sampling wines from the region that surrounds it. If that’s not enough, head into the nearby Black Forest for truly beguiling outdoor adventure.
   airport: AIRPORT NAME
   image-attribution: >
     <a href="#photo-link">Photo</a> by username / <a rel="nofollow" href="https://creativecommons.org/licenses/by/2.0/">CC BY</a>
@@ -56,7 +56,7 @@ destinations:
       <a href="#photo-link">Photo</a> by username / <a rel="nofollow" href="https://creativecommons.org/licenses/by/2.0/">CC BY</a>
   - id: mainau
     title: Mainau
-    description: Forget the bouquet, gift a whole flower island; or at least a visit. Mainau, an islet in the charming Lake Constance, is a technicolour wonder; wander the landscaped garden-island – dreamed up by the Bernadotte family – with a baroque castle thrown in for good measure. Steal a kiss in the enchanting Butterfly House and walk the gardens, with gorgeous lake views to one side and sprawling flower beds to the other.
+    description: Forget the bouquet, gift a whole flower island; or at least a visit to one. Mainau, an islet in the charming Lake Constance, is a technicolour wonder; wander the landscaped garden-island – dreamed up by the Bernadotte family – with a baroque castle thrown in for good measure. Steal a kiss in the enchanting Butterfly House and walk the gardens, with gorgeous lake views to one side and sprawling flower beds to the other.
     airport: AIRPORT NAME
     image-attribution: >
       <a href="#photo-link">Photo</a> by username / <a rel="nofollow" href="https://creativecommons.org/licenses/by/2.0/">CC BY</a>
