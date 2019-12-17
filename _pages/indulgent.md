@@ -1,13 +1,14 @@
 ---
 layout: category
-id: wellness
-permalink: /wellness/
-title: Wellness
+id: indulgent
+permalink: /indulgent/
+title: Indulgent
 nav: true
 nav-order: 3
 intro: Nothing is quite as rewarding than heading to one of Germany’s famous spa towns. Indulge yourself and your loved one, in some of the finest wellness retreats in Europe...
 
 banner:
+  title: For indulgent romance...
   attribution: >
     <a href="#photo-link">Photo</a> by username / <a rel="nofollow" href="https://creativecommons.org/licenses/by/2.0/">CC BY</a>
 

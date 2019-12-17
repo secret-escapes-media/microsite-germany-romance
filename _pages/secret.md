@@ -8,6 +8,7 @@ nav-order: 2
 intro: Looking for somewhere a little off-the-beaten-path? Here’s our selection of secret romantic hideaways...
 
 banner:
+  title: For secret romance...
   attribution: >
     <a href="#photo-link">Photo</a> by username / <a rel="nofollow" href="https://creativecommons.org/licenses/by/2.0/">CC BY</a>
 

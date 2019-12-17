@@ -39,13 +39,13 @@ document.addEventListener('DOMContentLoaded', function() {
         id: 'baden-baden',
         name: 'Baden-Baden',
         result: {
-          image: `${baseurl}/_assets/img/content/wellness/baden-baden.jpg`,
+          image: `${baseurl}/_assets/img/content/indulgent/baden-baden.jpg`,
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus hic asperiores similique cum dignissimos impedit explicabo nulla sit.',
+            'Your indulgent getaway awaits, in this most famous of spa towns. Bask in the thermal waters before heading out for a spot of fine dining...',
           links: {
             offer:
               'https://www.secretescapes.com/search/search?query=Baden-Baden',
-            more: `${baseurl}/wellness/#baden-baden`
+            more: `${baseurl}/indulgent/#baden-baden`
           }
         }
       },
@@ -67,13 +67,13 @@ document.addEventListener('DOMContentLoaded', function() {
         id: 'nuremberg',
         name: 'Nuremberg',
         result: {
-          image: `${baseurl}/_assets/img/content/culture/nuremberg.jpg`,
+          image: `${baseurl}/_assets/img/content/artistic/nuremberg.jpg`,
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus hic asperiores similique cum dignissimos impedit explicabo nulla sit.',
+            'A city brimming with history and culture makes for a truly captivating escape.',
           links: {
             offer:
               'https://www.secretescapes.com/search/search?query=Nuremberg',
-            more: `${baseurl}/culture/#nuremberg`
+            more: `${baseurl}/artistic/#nuremberg`
           }
         }
       },
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
         result: {
           image: `${baseurl}/_assets/img/content/secret/aschaffenburg.jpg`,
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus hic asperiores similique cum dignissimos impedit explicabo nulla sit.',
+            'A pretty riverside hideaway, delight in the picture-perfect parks and palaces of this gorgeous town...',
           links: {
             offer:
               'https://www.secretescapes.com/search/search?query=Aschaffenburg',
@@ -145,9 +145,9 @@ document.addEventListener('DOMContentLoaded', function() {
     game.innerHTML = `
       <div class="container container--xxl vpad--xxl">
         <div class="text--center">
-          <h2 class="title title--xl">Where is your romantic Germany?</h2>
-          <p class="width width--lg text--xxl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus hic asperiores similique cum dignissimos impedit explicabo nulla sit.</p>
-          <p class="width width--lg text--xxl text--bold">Choose 5 images</p>
+          <h2 class="title title--lg">Find your perfect romantic hideaway...</h2>
+          <p class="width width--lg text--xxl">Not sure where to head? We’ve made it super simple; simply click on the images that you think match up to your perfect romantic escape, and we’ll do the rest!</p>
+          <p class="width width--lg text--xxl text--bold">Choose five images</p>
         </div>
         <div class="space--md row row--constant-6-6 row--sm-4-4-4 row--lg-3-3-3-3 row--no-gutters">
           ${buildImageGrid(data.cities, 'step01', 3)}

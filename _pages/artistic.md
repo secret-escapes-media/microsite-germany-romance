@@ -1,13 +1,14 @@
 ---
 layout: category
-id: culture
-permalink: /culture/
-title: Culture
+id: artistic
+permalink: /artistic/
+title: Artistic
 nav: true
 nav-order: 4
 intro: It’s all well and good immersing yourself in gorgeous surroundings, but for a truly diverse romantic getaway don’t miss the most culturally-charged escapes here...
 
 banner:
+  title: For artistic romance...
   attribution: >
     <a href="#photo-link">Photo</a> by username / <a rel="nofollow" href="https://creativecommons.org/licenses/by/2.0/">CC BY</a>
 
@@ -21,7 +22,7 @@ feature:
   topics:
     - id: wurst
       title: Culinary Delights
-      description: Nuremberg is no stranger to culinary deliciousness. Age-old brewing traditions, Franconian wines and hearty dishes, and the famous Nuremberg Lebkuchen make the city a great foodie destination. Perhaps most famous is the Nürnberger Bratwurst. Maybe not the most romantic meal out there, but if culture is what you’re interested in then wurst is what you’re going to get. You’ll find it dished up across town, from the street imbiss to the biergarten, but the formula remains unchanged. For a truly historic bite, head for Bratwurstglöcklein im Handwerkerhof ( a wursty mouthful of a name) where the beloved bratwurst has been served since 1313. That’s over 700 years of wurst and culture, served on a deliciously cabbage-y pewter plate.
+      description: Nuremberg is no stranger to culinary deliciousness. Age-old brewing traditions, Franconian wines and hearty dishes make the city a great foodie destination. Tuck into warm Bretzels as you explore the town, and pick up a healthy portion of the sweet Lebkuchen. Restaurants whip up Franconian classics like pork shoulder (Schäufele). Perhaps most iconic is the Nürnberger Bratwurst. For a truly historic bite, head for Bratwurstglöcklein im Handwerkerhof (a wursty mouthful of a name) where the beloved bratwurst has been served since 1313. That’s over 700 years of wurst and culture, served on a deliciously cabbage-y pewter plate.
       image-attribution: >
         <a href="#photo-link">Photo</a> by username / <a rel="nofollow" href="https://creativecommons.org/licenses/by/2.0/">CC BY</a>
     - id: medieval-romance

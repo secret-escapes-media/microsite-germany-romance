@@ -8,6 +8,7 @@ nav-order: 5
 intro: Struggling to choose between riverside gem or historic charm? You can’t go wrong with this selection of classic romantic destinations; only the best of the best will do.
 
 banner:
+  title: For classic romance...
   attribution: >
     <a href="#photo-link">Photo</a> by username / <a rel="nofollow" href="https://creativecommons.org/licenses/by/2.0/">CC BY</a>
 

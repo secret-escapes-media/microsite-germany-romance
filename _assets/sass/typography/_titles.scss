@@ -82,8 +82,13 @@
   font-family: $font-title-01;
   font-size: $s5;
   font-weight: 400;
-  line-height: .5;
+  line-height: 0.8;
   letter-spacing: -.2rem;
   @include bp($md){ font-size: $s7; }
   @include bp($xl){ font-size: $s13; }
+  &--sm {
+    font-size: $s5;
+    @include bp($md){ font-size: $s7; }
+    @include bp($xl){ font-size: $s11; }
+  }
 }
