@@ -16,9 +16,14 @@ layout: default
     <h2 class="title title--xxl">{{page.feature.title}}</h2>
     {% if page.feature.airport %}<div class="airport airport--white">Nearest airport is {{page.feature.airport}}</div>{% endif %}
     <p class="width--xl text--xxl">{{page.feature.description}}</p>
+    <div class="space--sm"></div>
+    <a href="{{page.feature.link}}" class="btn btn--outline btn--outline-red">Find Out More</a>
     <div class="vpad--md">
       <div class="bg-img bg-img--16-9" style="background-image: url('{{site.img}}/content/{{page.id}}/{{page.feature.id}}.jpg');">
-        {% include components/image-attribution.html text=page.feature.image-attribution %}
+        <a href="{{page.feature.link}}" class="bg-img__link"></a>
+        {% if page.feature.image-attribution %}
+          {% include components/image-attribution.html text=page.feature.image-attribution %}
+        {% endif %}
       </div>
     </div>
     <div class="space--md"></div>
@@ -26,11 +31,16 @@ layout: default
       {% for topic in page.feature.topics %}
         <div class="col">
           <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{topic.id}}.jpg');">
-            {% include components/image-attribution.html text=topic.image-attribution %}
+            <a href="{{page.feature.link}}" class="bg-img__link"></a>
+            {% if topic.image-attribution %}
+              {% include components/image-attribution.html text=topic.image-attribution %}
+            {% endif %}
           </div>
           <div class="vpad--xs">
             <h4 class="title title--md">{{topic.title}}</h4>
             <p>{{topic.description}}</p>
+            <div class="space--sm"></div>
+            <a href="{{page.feature.link}}" class="btn btn--sm btn--outline btn--outline-red">Find Out More</a>
           </div>
         </div>
       {% endfor %}
@@ -44,7 +54,9 @@ layout: default
       {% for destination in page.destinations %}
         <div class="col">
           <div class="bg-img bg-img--4-3" style="background-image: url('{{site.img}}/content/{{page.id}}/{{destination.id}}.jpg');">
-            {% include components/image-attribution.html text=destination.image-attribution %}
+            {% if destination.image-attribution %}
+              {% include components/image-attribution.html text=destination.image-attribution %}
+            {% endif %}
           </div>
           <div class="vpad--xxs">
             <h4 class="title title--lg">{{destination.title}}</h4>

@@ -43,8 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
           description:
             'Your indulgent getaway awaits, in this most famous of spa towns. Bask in the thermal waters before heading out for a spot of fine dining...',
           links: {
-            offer:
-              'https://www.secretescapes.com/search/search?query=Baden-Baden',
             more: `${baseurl}/indulgent/#baden-baden`
           }
         }
@@ -55,10 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
         result: {
           image: `${baseurl}/_assets/img/content/classic/heidelberg.jpg`,
           description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptatibus hic asperiores similique cum dignissimos impedit explicabo nulla sit.',
+            'It doesn’t get prettier than Heidelberg. Captivating scenes await, coupled with charm in abundance.',
           links: {
-            offer:
-              'https://www.secretescapes.com/search/search?query=Heidelberg',
             more: `${baseurl}/classic/#heidelberg`
           }
         }
@@ -71,8 +67,6 @@ document.addEventListener('DOMContentLoaded', function() {
           description:
             'A city brimming with history and culture makes for a truly captivating escape.',
           links: {
-            offer:
-              'https://www.secretescapes.com/search/search?query=Nuremberg',
             more: `${baseurl}/artistic/#nuremberg`
           }
         }
@@ -85,8 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
           description:
             'A pretty riverside hideaway, delight in the picture-perfect parks and palaces of this gorgeous town...',
           links: {
-            offer:
-              'https://www.secretescapes.com/search/search?query=Aschaffenburg',
             more: `${baseurl}/secret/#aschaffenburg`
           }
         }
@@ -209,17 +201,16 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="container container--xxl vpad--xxl">
         <div class="width width--xl text--center">
           <h3 class="sub-title sub-title--sm">You should be heading for...</h3>
-          <h2 class="title title--xxxl">${data.final.name}</h2>
-          <div class="space--lg"></div>
-          <div class="bg-img bg-img--16-9" style="background-image:url('${data.final.result.image}')"></div>
-          <div class="space--sm"></div>
+          <h2 class="title title--xxl">${data.final.name}</h2>
           <p class="width width--lg text--xxl">${data.final.result.description}</p>
-          <div class="space--md"></div>
-          <div>
-            <a href="${data.final.result.links.offer}" class="btn btn--red">See ${data.final.name} offers</a>
+          <div class="vpad--xs">
+            <div class="bg-img bg-img--16-9" style="background-image:url('${data.final.result.image}')">
+              <a href="${data.final.result.links.more}" class="bg-img__link"></a>
+            </div>
           </div>
-          <div class="space--sm">
-            <a href="${data.final.result.links.more}" class="btn btn--outline btn--outline-red btn--sm">Find Out More</a> <a href="#0" class="${resetbtnClass} btn btn--outline btn--outline-red btn--sm">Choose again?</a>
+          <div class="inline-buttons space--xs">
+            <a href="${data.final.result.links.more}" class="btn btn--red">Find Out More</a>
+            <a href="#0" class="${resetbtnClass} btn btn--outline btn--outline-red btn--sm">Choose again?</a>
           </div>
         </div>
       </div>

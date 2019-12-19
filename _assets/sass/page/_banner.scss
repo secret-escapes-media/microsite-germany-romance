@@ -63,6 +63,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    z-index: $z-content-overlay;
     display: inline-block;
     max-width: 90%;
     padding: $s-4 $s-2;
@@ -73,9 +74,11 @@
     color: rgba($grey-darkest,.8);
     background-color: rgba($white,.66);
     border-top-left-radius: 3px;
+    @include transition;
     > a {
       text-decoration: underline;
       color: rgba($grey-darkest,.8);
     }
+    &:hover { background-color: $white; }
   }
 }

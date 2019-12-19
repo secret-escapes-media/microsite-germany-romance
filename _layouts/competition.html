@@ -19,7 +19,11 @@ banner:
   {% for item in page.features %}
     <div class="bob{% cycle '', ' bob--swap' %}">
       <div class="bob__img">
-        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/{{item.id}}.jpg');"></div>
+        <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/content/{{page.id}}/{{item.id}}.jpg');">
+          {% if item.image-attribution %}
+            {% include components/image-attribution.html text=item.image-attribution %}
+          {% endif %}
+        </div>
       </div>
       <div class="bob__text">
         <h2 class="title title--lg title--color">{{item.title}}</h2>

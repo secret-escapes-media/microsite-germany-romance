@@ -5,8 +5,9 @@
       {% include components/logo-se.html placement="footer" small='true' %}
       {% include components/logo-partner.html placement="footer" small='true' %}
     </div>
-    <div class="space--sm text--sm">
-      <p>© Copyright <span class="js-year">2018</span> Secret Escapes</p>
+    <div class="space--sm text--sm content-spacing">
+      <p>© Copyright <span class="js-year">2020</span> Secret Escapes</p>
+      {% if page.id == "overview" %}<p><a class="js-open-modal link link--underlined" href="#0" data-open-modal="game-images">See image copyright notices</a></p>{% endif %}
     </div>
   </div>
 </footer>

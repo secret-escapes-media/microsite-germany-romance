@@ -16,19 +16,17 @@ features:
   - id: the-stay
     title: The Stay
     description: You’ll spend three nights at the Crowne Plaza Heidelberg, with flights included. As you arrive, you’ll be treated to dinner at the hotel, before a good night’s rest in the well-appointed rooms. Enjoy breakfast each morning before exploring Heidelberg’s unique charms.
+    image-attribution: © Crowne Plaza Heidelberg City Centre
 
   - id: a-unique-tour
     title: A Unique Tour
     description: On your first full day, some real treats await. Enjoy a private guided tour through Heidelberg’s old town. Then, hop into a Piaggio Ape for a rather special tour of the castle grounds. Afterwards, indulge in an exclusive reception at the castle, where German sparkling wines accompany brilliant views over the town and surrounding hills.
+    image-attribution: © Heidelberger Schlossgastronomie
 
   - id: michelin-dining
     title: Michelin Dining
     description: "To round off your day, head to the castle’s Michelin restaurant: the illustrious Scharffs Schlossweinstube. Greeted by the head chef on arrival, you’ll be treated to a five-course, candlelit dinner. The following day, you and your loved one will have some personal time to explore Heidelberg at your own pace, with a HeidlebergCard in pocket; free public transport and unique savings in shops and restaurants to take advantage of."
-
-
-banner:
-  attribution: >
-    <a href="#photo-link">Photo</a> by username / <a rel="nofollow" href="https://creativecommons.org/licenses/by/2.0/">CC BY</a>
+    image-attribution: © Heidelberger Schlossgastronomie1
 
 competition-form:
   id: comp
