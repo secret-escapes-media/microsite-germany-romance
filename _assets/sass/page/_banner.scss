@@ -65,15 +65,14 @@
     bottom: 0;
     z-index: $z-content-overlay;
     display: inline-block;
-    max-width: 90%;
     padding: $s-4 $s-2;
     font-size: $s-1;
     font-weight: 500;
     line-height: 1.2;
     text-align: right;
     color: rgba($grey-darkest,.8);
-    background-color: rgba($white,.66);
-    border-top-left-radius: 3px;
+    background-color: rgba($white,.75);
+    word-break: break-all;
     @include transition;
     > a {
       text-decoration: underline;
