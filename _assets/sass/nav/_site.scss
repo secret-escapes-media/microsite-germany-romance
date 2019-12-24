@@ -96,7 +96,8 @@ $nav-color:          $grey-darker;
     transition: background-color $transition-time ease;
     white-space: nowrap;
     &.is-current      { background-color: rgba($nav-color,.66); }
-    .no-touch &:hover { background-color: rgba($nav-color,1); }
+    .no-touch &:hover,
+    .no-touch &:focus { background-color: rgba($nav-color,1); }
     @include bp($nav-width-bp){
       padding-left: $s0;
       padding-right: $s0;
