@@ -30,7 +30,7 @@
 
 .game-image {
   position: relative;
-  &:focus { outline: none; }
+  &:focus { z-index: $z-content-overlay; }
   &:before {
     // image overlay
     content: '';
@@ -63,6 +63,11 @@
     transform-origin: center;
     @include transition;
   }
+  &:hover:before,
+  &:focus:before {
+    background-color: rgba($grey-darkest, .25);
+    .has-limit & { background-color: transparent; }
+  }
   &.is-selected {
     &:before {
       background-color: rgba($grey-darkest, .6);
@@ -85,15 +90,19 @@
 }
 
 .game-submit {
-  position: fixed;
+  position: relative;
   left: 0;
   right: 0;
+  bottom: 0;
   bottom: 0;
   z-index: $z-content-overlay;
   display: none;
   background-color: rgba($white, .85);
   padding: $s0 $s1;
-  .has-limit & { display: block; }
+  .has-limit & {
+    display: block;
+    position: sticky;
+  }
 }
 
 .inline-buttons {

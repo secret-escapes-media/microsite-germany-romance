@@ -100,8 +100,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const image = document.createElement('div');
   col.classList.add('col');
   imageWrap.classList.add(imageSelectClass, 'game-image');
+  imageWrap.setAttribute('tabindex', '0');
   image.classList.add('bg-img', 'bg-img--1-1');
-  image.setAttribute('tabindex', '0');
 
   // ---------------------------------------------------------------------------
   // create image grid for each step of the game
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <p class="width width--lg text--xxl">Not sure where to head? We’ve made it super simple; simply click on the images that you think match up to your perfect romantic escape, and we’ll do the rest!</p>
           <p class="width width--lg text--xxl text--bold">Choose five images</p>
         </div>
-        <div class="space--md row row--constant-6-6 row--sm-4-4-4 row--lg-3-3-3-3 row--no-gutters">
+        <div class="space--md row row--constant-6-6 row--md-4-4-4 row--lg-3-3-3-3 row--no-gutters">
           ${buildImageGrid(data.cities, 'step01', 3)}
         </div>
         <div class="game-submit text--center space--lg"><a class="${submitbtnClass} btn btn--lg btn--red" href="#0">Submit Images</a></div>
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="text--center">
           <p class="width width--lg text--xxl text--bold">Choose another 5 images</p>
         </div>
-        <div class="space--md row row--constant-6-6 row--sm-4-4-4 row--lg-3-3-3-3 row--no-gutters">
+        <div class="space--md row row--constant-6-6 row--md-4-4-4 row--lg-3-3-3-3 row--no-gutters">
           ${buildImageGrid(data.shortlist, 'step02', 6)}
         </div>
         <div class="game-submit text--center space--lg"><a class="${submitbtnClass} btn btn--lg btn--red" href="#0">Submit Images</a></div>
@@ -303,14 +303,14 @@ document.addEventListener('DOMContentLoaded', function() {
   // image selection
   // ---------------------------------------------------------------------------
   function imageSelect(el, step) {
-    el.addEventListener('click', function(e) {
+    function selectHandler(e) {
       e.preventDefault();
-      const city = this.dataset.city;
-      const isSelected = this.classList.contains(selectedClass);
+      const city = el.dataset.city;
+      const isSelected = el.classList.contains(selectedClass);
       const removeImage = () => {
         const arrPos = data.selection[step].indexOf(city);
         data.selection[step].splice(arrPos, 1);
-        this.classList.remove(selectedClass);
+        el.classList.remove(selectedClass);
       };
       // create arrays to track selected images
       if (!data.selection) data.selection = [];
@@ -324,15 +324,23 @@ document.addEventListener('DOMContentLoaded', function() {
           removeImage();
         } else {
           data.selection[step].push(city);
-          this.classList.add(selectedClass);
+          el.classList.add(selectedClass);
         }
       }
       if (data.selection[step].length === 5) {
         game.classList.add(maxSelectedClass);
+        console.log('focus button');
+        document.querySelector(`.${submitbtnClass}`).focus();
       } else {
         game.classList.remove(maxSelectedClass);
       }
+    }
+    // add enter key event
+    el.addEventListener('keydown', e => {
+      if (e.code === 'Enter') selectHandler(e);
     });
+    // add click event
+    el.addEventListener('click', e => selectHandler(e));
   }
 
   //////////////////////////////////////////////////////////////////////////////

@@ -15,10 +15,10 @@
   &--sm { padding: $s1 $s4; font-size: $s-2; }
   &--lg { padding: $s3 $s8; font-size: $s-1; }
   &--orange { background-color: $orange;
-    &:hover { background-color: $orange-dark; }
+    &:hover, &:focus, { background-color: $orange-dark; }
   }
   &--red { background-color: $g-red;
-    &:hover { background-color: darken($g-red, 5); }
+    &:hover, &:focus { background-color: darken($g-red, 12); }
   }
   &--outline {
     color: inherit;
@@ -38,7 +38,7 @@
   }
   &--outline-orange {
     &:before { border-color: $orange; }
-    &:hover {
+    &:hover, &:focus {
       color: $white;
       background-color: $orange;
       &:before { border-color: $orange; }
@@ -46,7 +46,7 @@
   }
   &--outline-red {
     &:before { border-color: $g-red; }
-    &:hover {
+    &:hover, &:focus {
       color: $white;
       background-color: $g-red;
       &:before { border-color: $g-red; }
