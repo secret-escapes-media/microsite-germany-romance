@@ -4,7 +4,11 @@ video { width: 100%; }
   video {
     display: block;
     visibility: hidden;
-    .no-js & { visibility: visible; }
+    opacity: 0;
+    .no-js & {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }
 
@@ -50,6 +54,8 @@ video { width: 100%; }
     @include bp($xl) { width: $size-lg; height: $size-lg; }
     @include transition;
   }
-  &:hover &__play-icon { transform: scale(1.1); }
-  &:hover &__bg:before { background-color: rgba($black, .25); }
+  &:hover &__play-icon,
+  &:focus &__play-icon { transform: scale(1.1); }
+  &:hover &__bg:before,
+  &:focus &__bg:before { background-color: rgba($black, .25); }
 }
