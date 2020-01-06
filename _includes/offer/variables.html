@@ -7,4 +7,4 @@
 {% assign offers-by-saving = offers | sort: 'saved' | reverse %}
 
 <!-- offers by price -->
-{% assign offers-by-price = offers | sort: 'price' %}
+{% assign offers-by-price = offers | sort: 'price' | sort: 'type' %}

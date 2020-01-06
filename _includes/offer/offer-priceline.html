@@ -1,0 +1,15 @@
+<div class="offer">
+
+  <a class="offer__link" href="{{offer.link}}"><span class="btn btn--orange">Show Prices</span></a>
+
+  <div class="bg-img bg-img--3-2" style="background-image: url('{{offer.image}}')"></div>
+
+  <div class="offer__content">
+
+    <h3 class="core-title core-title--xs">{{offer.title}}</h3>
+    <h4 class="offer__location">{{offer.location}}</h4>
+    <div class="offer__description">{{offer.description | truncatewords: 30}}</div>
+
+  </div>
+
+</div>

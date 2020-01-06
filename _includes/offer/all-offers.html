@@ -5,7 +5,11 @@
     <div class="row row--xl-6-6 row--gutters-lg">
       {% for offer in offers-by-price %}
         <div class="col">
+        {% if offer.type == "core" %}
           {% include offer/offer.html %}
+        {% else %}
+          {% include offer/offer-priceline.html %}
+        {% endif %}
         </div>
       {% endfor %}
     </div>
