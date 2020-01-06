@@ -30,7 +30,7 @@ function playVideo() {
 
 // watch events to play video
 video.on('click', playVideo);
-video.on('keydown', e => {
+video.on('keydown', function(e) {
   if (e.code == 'Enter') playVideo();
 });
 
