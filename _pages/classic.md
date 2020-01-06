@@ -18,7 +18,7 @@ feature:
   topics:
     - id: schloss-heidelberg
       title: Schloss Heidelberg
-      description: The town’s most romantic asset, the renaissance red-stone marvel paints an evocative shape on Heidelburg’s skyline. And, of course, the temptation is there to get a closer look. It’s a steep climb to the top, but the views are unmissable. Best to head there just before sunset and pitch a spot in the castle grounds, where a blanket and some wine will be the perfect aperitif to start the evening.
+      description: The town’s most romantic asset, the renaissance red-stone marvel paints an evocative shape on Heidelberg’s skyline. And, of course, the temptation is there to get a closer look. It’s a steep climb to the top, but the views are unmissable. Best to head there just before sunset and pitch a spot in the castle grounds, where a blanket and some wine will be the perfect aperitif to start the evening.
       image-attribution: © Schloss Heidelberg Heidelberg Marketing GmbH
     - id: funicular
       title: Funicular
