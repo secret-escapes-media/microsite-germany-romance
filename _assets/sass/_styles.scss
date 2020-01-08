@@ -111,3 +111,10 @@
   align-items: center;
   > * + * { margin-top: $s-2; }
 }
+
+.bg--comp-banner {
+  background-image: url('../img/content/competition/banner-mobile.jpg');
+  @include bp($xl) {
+    background-image: url('../img/content/competition/banner.jpg');
+  }
+}

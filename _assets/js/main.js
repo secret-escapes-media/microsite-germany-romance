@@ -9,14 +9,6 @@ var video = $('.js-video');
 var videoEl = video.find('video');
 var videoImgPath = videoEl.attr('poster');
 
-// add thumbnail element
-video.addClass('thumbnail');
-video.prepend(
-  '<div class="thumbnail__bg bg--img" style="background-image: url(\'' +
-    videoImgPath +
-    '\');"><div class="thumbnail__play-icon"></div></div>'
-);
-
 // remove thumbnail and play video
 function playVideo() {
   $('.thumbnail__bg').fadeOut(250);
@@ -26,13 +18,25 @@ function playVideo() {
     transition: 'opacity 1.5s ease'
   });
   videoEl[0].play();
+  video.off(); // remove listener so it doesn't interfere with video player
 }
 
-// watch events to play video
-video.on('click', playVideo);
-video.on('keydown', function(e) {
-  if (e.code == 'Enter') playVideo();
-});
+if (!("ontouchstart" in document.documentElement)){
+
+  // add thumbnail element
+  video.addClass('thumbnail');
+  video.prepend(
+    '<div class="thumbnail__bg bg--img" style="background-image: url(\'' +
+      videoImgPath +
+      '\');"><div class="thumbnail__play-icon"></div></div>'
+  );
+
+  // watch events to play video
+  video.on('click', playVideo);
+  video.on('keydown', function(e) {
+    if (e.code == 'Enter') playVideo();
+  });
+}
 
 
 ////////////////////////////////////////////////////////////////////////////////

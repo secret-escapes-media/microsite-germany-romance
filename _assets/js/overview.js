@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
       },
       {
         id: 'aschaffenburg',
-        name: 'Aschaffenburg',
+        name: 'Aschaffen&shy;burg',
         result: {
           image: `${baseurl}/_assets/img/content/secret/aschaffenburg.jpg`,
           description:
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <h2 class="title title--xxl">${data.final.name}</h2>
           <p class="width width--lg text--xxl">${data.final.result.description}</p>
           <div class="vpad--xs">
-            <div class="bg-img bg-img--16-9" style="background-image:url('${data.final.result.image}')">
+            <div class="bg-img bg-img--4-3 bg-img--md-3-2 bg-img--xl-16-9" style="background-image:url('${data.final.result.image}')">
               <a href="${data.final.result.links.more}" class="bg-img__link"></a>
             </div>
           </div>
@@ -290,7 +290,8 @@ document.addEventListener('DOMContentLoaded', function() {
   // reset game scroll position
   // ---------------------------------------------------------------------------
   function resetGameScroll() {
-    document.documentElement.scrollTop = game.offsetTop;
+    const el = document.scrollingElement || document.documentElement;
+    el.scrollTop = game.offsetTop;
   }
 
   //////////////////////////////////////////////////////////////////////////////
@@ -329,7 +330,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       if (data.selection[step].length === 5) {
         game.classList.add(maxSelectedClass);
-        console.log('focus button');
         document.querySelector(`.${submitbtnClass}`).focus();
       } else {
         game.classList.remove(maxSelectedClass);

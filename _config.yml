@@ -5,10 +5,10 @@ client:
   link: http://www.germany.travel/en/
 core-se-link: https://www.secretescapes.com/current-sales
 description: >
-  Explore our selection of the finest romantic getaways this beguiling country has to offer. There’s a dazzling array to choose from, whether it’s the wild coastal retreat of Rügen or the labyrinthine cobbled streets of Rothenburg. Choose your type of romance, be it secret, classic, artistic or indulgent, and dream of a spellbinding, romantic escape in Germany. 
+  Explore our selection of the finest romantic getaways this beguiling country has to offer. There’s a dazzling array to choose from, whether it’s the wild coastal retreat of Rügen or the labyrinthine cobbled streets of Rothenburg. Choose your type of romance, be it secret, classic, artistic or indulgent, and dream of a spellbinding, romantic escape in Germany.
 
 # file paths
-url:     "http://mp.secretescapes.com" # the base hostname & protocol for your site
+url:     "https://mp.secretescapes.com" # the base hostname & protocol for your site
 baseurl: "/uk/2020/romance-in-germany" # the subpath of your site, e.g. /blog/
 img:     "/uk/2020/romance-in-germany/_assets/img"
 css:     "/uk/2020/romance-in-germany/_assets/css"

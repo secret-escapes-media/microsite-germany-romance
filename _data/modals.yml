@@ -23,18 +23,20 @@
   pages:
     - id: overview
   content: >
-    <div class="core-title core-title--md">Image copyright notices</div>
-    <div class="core-title space--sm"></div>
-    <ul>
-      <li>© Baden-Baden Kur & Tourismus GmbH</li>
-      <li>© Baden-Baden Kur & Tourismus GmbH</li>
-      <li>© Baden-Baden Kur & Tourismus GmbH</li>
-      <li>© Baden-Baden Kur & Tourismus GmbH</li>
-      <li>AB_Schloss u. Main (c) T. Benzin.jpg</li>
-      <li>Header_Kaiserburg_Nuernberg_©Uwe_Niklas.jpg</li>
-      <li>nuernberger_lebkuchen003_foto_Uwe_Niklas.jpg</li>
-      <li>Schloss Heidelberg© Heidelberg Marketing GmbH.jpg</li>
-    </ul>
+    <div class="content-spacing width width--xl">
+      <div class="core-title core-title--md">Image copyright notices</div>
+      <div class="core-title space--sm"></div>
+      <ul>
+        <li>© Baden-Baden Kur & Tourismus GmbH</li>
+        <li>© Baden-Baden Kur & Tourismus GmbH</li>
+        <li>© Baden-Baden Kur & Tourismus GmbH</li>
+        <li>© Baden-Baden Kur & Tourismus GmbH</li>
+        <li>AB_Schloss u. Main (c) T. Benzin.jpg</li>
+        <li>Header_Kaiserburg_Nuernberg_©Uwe_Niklas.jpg</li>
+        <li>nuernberger_lebkuchen003_foto_Uwe_Niklas.jpg</li>
+        <li>Schloss Heidelberg© Heidelberg Marketing GmbH.jpg</li>
+      </ul>
+    </div>
 
 #################################################
 #   Competition
@@ -44,7 +46,7 @@
   pages:
     - id: competition
   content: >
-    <div class="content-spacing">
+    <div class="content-spacing width width--xl">
       <h3 class="core-title core-title--md">Competition terms & conditions</h3>
       <div class="space--sm"></div>
       <h4 class="core-title core-title--xs">Promoter and Participants</h4>
