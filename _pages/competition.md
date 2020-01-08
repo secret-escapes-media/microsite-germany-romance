@@ -31,7 +31,7 @@ features:
 competition-form:
   id: comp
   post-url: https://getform.io/f/45037d1d-a6b7-47e2-8f15-c4ca843fe870
-  expiry-date: 2020-02-17
+  expiry-date: 2020-02-19
   fields:
     - id: name
       type: text
@@ -55,7 +55,7 @@ competition-form:
           invalid: true
     - id: opt-in
       type: radio
-      label: Would you like to receive emails from our Germany National Tourist Office?
+      label: Would you like to receive emails from the German National Tourist Office?
       required: true
       options:
         - id: opt-in-true
@@ -66,7 +66,7 @@ competition-form:
           value: 'no'
     - id: why
       type: text-long
-      label: Tell us why you think you should take your loved one on a romantic trip to Germany?
+      label: Tell us why you think you should take your loved one on a romantic trip to Germany
       required: true
   submit: Submit Entry
   terms: >

@@ -14,7 +14,7 @@ var formValidation = (function functionName(form) {
     'radio': 'Please select an answer for this question',
     'checkbox': 'Please select an answer for this question',
     'select': 'Please select an option from this list',
-    'textarea': 'Please fill in a response over 60 characters',
+    'textarea': 'Please fill in a response between 50 to 100 characters',
     'compInvalid': 'Sorry, but you must meet this requirement to enter the competition'
   };
 
@@ -230,8 +230,8 @@ var formValidation = (function functionName(form) {
     // check all text inputs in form aren't blank
     form.element.find('textarea').each(function() { // validate all text inputs
       var inputValue = $(this).val();
-      if ( inputValue === '' || (/^\s+$/).test(inputValue) || inputValue.length < 60 ) {
-        // input is empty, just whitespace or under 60 characters
+      if ( inputValue === '' || (/^\s+$/).test(inputValue) || inputValue.length < 50 || inputValue.length > 100 ) {
+        // input is empty, just whitespace, under 50 characters or over 100 characters
         isInputRequired(this, errorMessages.textarea);
       } else { // there is no error with input
         removeInputErrorMessage(this);
