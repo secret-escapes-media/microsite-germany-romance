@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     // add enter key event
     el.addEventListener('keydown', e => {
-      if (e.code === 'Enter') selectHandler(e);
+      if (e.code === 'Enter' || e.which === 13) selectHandler(e);
     });
     // add click event
     el.addEventListener('click', e => selectHandler(e));

@@ -43,5 +43,6 @@
   <link rel="stylesheet" href="{{site.css}}/main.css">
   {% if page.extra-css or layout.extra-css %}<link rel="stylesheet" href="{{site.css}}/{{page.id}}.css">{% endif %}
   <script src="{{site.js}}/main.js"></script>
+  {% if page.id == "overview" %}<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.append%2CElement.prototype.classList%2Cdefault%2Ces2015%2CObject.entries"></script>{% endif %}
   {% if page.extra-js or layout.extra-js %}<script src="{{site.js}}/{{page.id}}.js"></script>{% endif %}
 </head>
