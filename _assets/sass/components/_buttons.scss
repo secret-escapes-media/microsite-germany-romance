@@ -20,6 +20,9 @@
   &--red { background-color: $g-red;
     &:hover, &:focus { background-color: darken($g-red, 12); }
   }
+  &--blue { background-color: $e-blue;
+    &:hover, &:focus { background-color: darken($e-blue, 8); }
+  }
   &--outline {
     color: inherit;
     &:before {

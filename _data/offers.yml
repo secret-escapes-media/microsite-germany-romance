@@ -77,3 +77,15 @@
   expires: 2020/01/20
   image: https://d2g6qre7voj6kv.cloudfront.net/sales/57985/be98207a_22b6_4234_8187_cc97227b09da.jpg?auto=format,compress
   link: https://www.secretescapes.com/hotel-vier-jahreszeiten-berlin-city-kreuzberg-berlin-germany/sale
+
+
+###############################################################  external offers
+
+- type: external
+  id: ibis-styles-aschaffenburg
+  title: Ibis Styles Aschaffenburg
+  location: Aschaffenburg, Germany
+  description: The recently opened design hotel with an interior inspired by nature is only a 10-minute walk from the romantic Johannisburg Palace and the quaint old town. Free extras like a delicious breakfast buffet, wi-fi and a gym await all hotel guests.
+  price: 68
+  price-description: per room per night
+  link: https://all.accor.com/hotel/A9V7/index.en.shtml
