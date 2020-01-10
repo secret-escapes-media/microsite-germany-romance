@@ -1,0 +1,23 @@
+<div class="offer offer--external">
+
+  <a class="offer__link" href="{{offer.link}}"><span class="btn btn--blue">View Offer</span></a>
+
+  <div class="bg-img bg-img--3-2" style="background-image: url('{{site.img}}/offers/{{offer.id}}.jpg')"></div>
+
+  <div class="offer__content">
+
+    <h3 class="core-title core-title--xs">{{offer.title}}</h3>
+    <h4 class="offer__location">{{offer.location}}</h4>
+    <div class="offer__description">{{offer.description}}</div>
+
+    <div class="offer__bottom">
+      <div class="offer__details">
+        <div>From <span class="offer__price">£{{offer.price}}</span></div>
+        <div class="text--sm">{{offer.price-description}}</div>
+      </div>
+      <div class="offer__arrow"></div>
+    </div>
+
+  </div>
+
+</div>
