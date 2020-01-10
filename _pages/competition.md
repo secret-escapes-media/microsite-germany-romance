@@ -30,8 +30,8 @@ features:
 
 competition-form:
   id: comp
-  post-url: https://getform.io/f/45037d1d-a6b7-47e2-8f15-c4ca843fe870
-  expiry-date: 2020-02-19
+  post-url: "#getformurl"
+  expiry-date: 3000-01-01
   fields:
     - id: name
       type: text
