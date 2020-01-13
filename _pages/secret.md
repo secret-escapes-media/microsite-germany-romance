@@ -15,7 +15,7 @@ feature:
   id: aschaffenburg
   title: Aschaffen&shy;burg
   description: A town of parks and palaces, cobbled streets and colour, Aschaffenburg is a little-known riverside gem. Its iconic landmark is the vast, German-Renaissance palace, which dominates the shoreline and hints at the lavish architecture that makes the town so picturesque. The old town is a mix of narrow cobbled lanes and pastel timber-frame buildings, with Bavarian charm in abundance. Sink into Bierkellers for frothy Pilsner and hearty eats, hop between art galleries and take romantic strolls through landscaped riverside parks. Aschaffenburg is a pretty and peaceful place perfect for spoiling your loved one.
-  airport: Frankfurt Airport
+  airport: Frankfurt am Main Airport
   link: https://www.info-aschaffenburg.de/en/home.html
   image-attribution: AB_Schloss u. Main (c) T. Benzin.jpg
   topics:

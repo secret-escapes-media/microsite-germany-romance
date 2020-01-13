@@ -15,7 +15,7 @@ feature:
   id: baden-baden
   title: Baden-Baden
   description: Baden-Baden is the most famous spa town in Germany, with an old-world grandeur and style unparalleled. Sink into the finer things, where gorgeous thermal baths sit alongside opera houses and colourful belle-epoque townhouses. If you can bear to tear yourself away from the thermal waters of Baden-Baden’s many spas, you can indulge in boutique shopping, Michelin dining, and sampling wines from the region that surrounds it. If that’s not enough, head into the nearby Black Forest for truly beguiling outdoor adventure.
-  airport: Stuttgart Airport
+  airport: Frankfurt am Main Airport
   link: https://visit.baden-baden.de/en
   image-attribution: © Baden-Baden Kur & Tourismus GmbH
   topics:
