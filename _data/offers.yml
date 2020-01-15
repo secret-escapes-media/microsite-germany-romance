@@ -46,28 +46,6 @@
 ################################################################  core se offers
 
 - type: core
-  title: HENRI Hotel
-  location: Berlin, Germany
-  description: Boutique Belle Epoque-inspired Berlin pad
-  price: 98
-  price-description: per room per night
-  saved: 44
-  expires: 2020/01/20
-  image: https://d2g6qre7voj6kv.cloudfront.net/sales/46180/36e83711_3712_4170_917c_4e1896a6d197.jpg?auto=format,compress
-  link: https://www.secretescapes.com/henri-hotel-berlin-germany/sale
-
-- type: core
-  title: The Mandala Berlin
-  location: Berlin, Germany
-  description: Five-star Berlin hotel with award-winning dining
-  price: 136
-  price-description: per suite per night
-  saved: 39
-  expires: 2020/01/13
-  image: https://d2g6qre7voj6kv.cloudfront.net/sales/102189/0eb9e923_8b6b_46b7_9593_1c6faff4e7d0.jpg?auto=format,compress
-  link: https://www.secretescapes.com/the-mandala-berlin-berlin-germany1/sale
-
-- type: core
   title: Hotel Vier Jahreszeiten Berlin City Kreuzberg
   location: Berlin, Germany
   description: Centrally-located Berlin base with cool interiors
@@ -75,9 +53,63 @@
   price-description: per room per night
   saved: 51
   expires: 2020/01/20
-  image: https://d2g6qre7voj6kv.cloudfront.net/sales/57985/be98207a_22b6_4234_8187_cc97227b09da.jpg?auto=format,compress
+  image: https://secretescapes-web.imgix.net/sales/57985/be98207a_22b6_4234_8187_cc97227b09da.jpg?auto=format,compress
   link: https://www.secretescapes.com/hotel-vier-jahreszeiten-berlin-city-kreuzberg-berlin-germany/sale
 
+- type: core
+  title: HENRI Hotel
+  location: Berlin, Germany
+  description: Boutique Belle Epoque-inspired Berlin pad
+  price: 98
+  price-description: per room per night
+  saved: 44
+  expires: 2020/01/20
+  image: https://secretescapes-web.imgix.net/sales/46180/36e83711_3712_4170_917c_4e1896a6d197.jpg?auto=format,compress
+  link: https://www.secretescapes.com/henri-hotel-berlin-germany/sale
+
+- type: core
+  title: Hotel Otto
+  location: Berlin, Germany
+  description: Hip Berlin design hotel in upscale Charlottenburg
+  price: 76
+  price-description: per room per night
+  saved: 41
+  expires: 2020/01/27
+  image: https://secretescapes-web.imgix.net/sales/100313/4936f45b_7986_478b_b4d7_61e76413c4cf.jpg?auto=format,compress
+  link: https://www.secretescapes.com/hotel-otto-berlin-germany/sale
+
+- type: core
+  title: Mondrian Suites Hotel
+  location: Berlin, Germany
+  description: Chic Berlin apartment stay near Checkpoint Charlie
+  price: 84
+  price-description: per room per night
+  saved: 37
+  expires: 2020/01/27
+  image: https://secretescapes-web.imgix.net/sales/101822/2ae494c8_1da4_41f4_a150_299c14741f91.jpg?auto=format,compress
+  link: https://www.secretescapes.com/mondrian-suites-hotel-berlin-germany/sale
+
+- type: core
+  title: Almodóvar Hotel
+  location: Berlin, Germany
+  description: Creative Berlin pad east of the river
+  price: 84
+  price-description: per room per night
+  saved: 43
+  expires: 2020/01/27
+  image: https://secretescapes-web.imgix.net/sales/52678/75cc90b7_c2e4_45df_b513_717b8d6ee45d.jpg?auto=format,compress
+  link: https://www.secretescapes.com/almodovar-hotel-berlin-germany/sale
+
+- type: core
+  title: Maritim proArte Hotel Berlin
+  location: Berlin, Germany
+  description: Modern art and design hotel in the heart of Berlin
+  price: 93
+  price-description: per room per night
+  saved: 43
+  expires: 2020/01/27
+  image: https://secretescapes-web.imgix.net/sales/31796/f1c2d053_ea65_42de_9423_a720118b45bf.jpg?auto=format,compress
+  link: https://www.secretescapes.com/maritim-proarte-hotel-berlin-berlin-germany/sale
 
 ###############################################################  external offers
 
