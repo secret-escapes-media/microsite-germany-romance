@@ -46,34 +46,12 @@
 ################################################################  core se offers
 
 - type: core
-  title: Hotel Vier Jahreszeiten Berlin City Kreuzberg
-  location: Berlin, Germany
-  description: Centrally-located Berlin base with cool interiors
-  price: 76
-  price-description: per room per night
-  saved: 51
-  expires: 2020/01/20
-  image: https://secretescapes-web.imgix.net/sales/57985/be98207a_22b6_4234_8187_cc97227b09da.jpg?auto=format,compress
-  link: https://www.secretescapes.com/hotel-vier-jahreszeiten-berlin-city-kreuzberg-berlin-germany/sale
-
-- type: core
-  title: HENRI Hotel
-  location: Berlin, Germany
-  description: Boutique Belle Epoque-inspired Berlin pad
-  price: 98
-  price-description: per room per night
-  saved: 44
-  expires: 2020/01/20
-  image: https://secretescapes-web.imgix.net/sales/46180/36e83711_3712_4170_917c_4e1896a6d197.jpg?auto=format,compress
-  link: https://www.secretescapes.com/henri-hotel-berlin-germany/sale
-
-- type: core
   title: Hotel Otto
   location: Berlin, Germany
   description: Hip Berlin design hotel in upscale Charlottenburg
-  price: 76
+  price: 78
   price-description: per room per night
-  saved: 41
+  saved: 39
   expires: 2020/01/27
   image: https://secretescapes-web.imgix.net/sales/100313/4936f45b_7986_478b_b4d7_61e76413c4cf.jpg?auto=format,compress
   link: https://www.secretescapes.com/hotel-otto-berlin-germany/sale
@@ -82,10 +60,10 @@
   title: Mondrian Suites Hotel
   location: Berlin, Germany
   description: Chic Berlin apartment stay near Checkpoint Charlie
-  price: 84
+  price: 86
   price-description: per room per night
-  saved: 37
-  expires: 2020/01/27
+  saved: 35
+  expires: 2020/02/03
   image: https://secretescapes-web.imgix.net/sales/101822/2ae494c8_1da4_41f4_a150_299c14741f91.jpg?auto=format,compress
   link: https://www.secretescapes.com/mondrian-suites-hotel-berlin-germany/sale
 
@@ -93,23 +71,46 @@
   title: Almodóvar Hotel
   location: Berlin, Germany
   description: Creative Berlin pad east of the river
-  price: 84
+  price: 95
   price-description: per room per night
-  saved: 43
+  saved: 41
   expires: 2020/01/27
-  image: https://secretescapes-web.imgix.net/sales/52678/75cc90b7_c2e4_45df_b513_717b8d6ee45d.jpg?auto=format,compress
+  image: https://secretescapes-web.imgix.net/sales/98917/8520273a_68bb_43b4_b125_67e2812d9d7e.jpg?auto=format,compress
   link: https://www.secretescapes.com/almodovar-hotel-berlin-germany/sale
 
 - type: core
   title: Maritim proArte Hotel Berlin
   location: Berlin, Germany
   description: Modern art and design hotel in the heart of Berlin
-  price: 93
+  price: 95
   price-description: per room per night
-  saved: 43
-  expires: 2020/01/27
+  saved: 41
+  expires: 2020/02/03
   image: https://secretescapes-web.imgix.net/sales/31796/f1c2d053_ea65_42de_9423_a720118b45bf.jpg?auto=format,compress
   link: https://www.secretescapes.com/maritim-proarte-hotel-berlin-berlin-germany/sale
+
+- type: core
+  title: Ruby Lilly Hotel Munich
+  location: Munich, Germany
+  description: Design-led Munich digs near the city centre
+  price: 95
+  price-description: per room per night
+  saved: 32
+  expires: 2020/02/03
+  image: https://secretescapes-web.imgix.net/sales/46766/538e3883_bb9f_4f2e_8b0c_89f14eed5db6.jpg?auto=format,compress
+  link: https://www.secretescapes.com/ruby-lilly-hotel-munich-munich-germany-2/sale
+
+- type: core
+  title: Charming Bavarian Alps holiday at a family-run bolthole
+  location: Alpenhotel Wittelsbach, Germany
+  description: Bavarian Alps getaway to a Small Elegant Hotels member
+  price: 580
+  price-description: per person. Based on 2 people for 7 nights
+  saved: 39
+  expires: 2020/03/23
+  image: https://secretescapes-web.imgix.net/sales/93652/469b31c1_51fa_4ff4_ab3e_6add5df43d5c.jpg?auto=format,compress
+  link: https://www.secretescapes.com/charming-bavarian-alps-holiday-at-a-family-run-bolthole-alpenhotel-wittelsbach-germany/sale
+
 
 ###############################################################  external offers
 
