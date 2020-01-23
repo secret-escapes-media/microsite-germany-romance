@@ -5,7 +5,7 @@
 
 {% assign core-offers = site.data.offers | where: 'type', 'core' | sort: 'price' %}
 {% assign priceline-offers = site.data.offers | where: 'type', 'priceline' %}
-{% assign external-offers = site.data.offers | where: 'type', 'external'| sort: 'price' %}
+{% assign external-offers = site.data.offers | where: 'type', 'external' %}
 
 <!-- offers by saving -->
 {% assign offers-by-saving = offers | sort: 'saved' | reverse %}

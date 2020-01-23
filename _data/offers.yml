@@ -122,3 +122,10 @@
   price: 68
   price-description: per room per night
   link: https://all.accor.com/hotel/A9V7/index.en.shtml
+
+- type: external
+  id: maison-messmer
+  title: Maison Messmer
+  location: Baden-Baden, Germany
+  description: This hotel acts as a house of indulgence, where you experience the personal hospitality of a second home combined with the subtle, smart luxury of a contemporary grand hotel. Welcome to a magical castle as if plucked straight from a fairy tale, where you can leave everyday life completely behind you with our symbiosis of modern and traditional.
+  link: https://www.hommage-hotels.com/en/maison-messmer-baden-baden/our-hotel

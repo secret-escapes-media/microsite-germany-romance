@@ -12,8 +12,10 @@
 
     <div class="offer__bottom">
       <div class="offer__details">
-        <div>From <span class="offer__price">£{{offer.price}}</span></div>
-        <div class="text--sm">{{offer.price-description}}</div>
+        {% if offer.price %}
+          <div>From <span class="offer__price">£{{offer.price}}</span></div>
+          <div class="text--sm">{{offer.price-description}}</div>
+        {% endif %}
       </div>
       <div class="offer__arrow"></div>
     </div>
