@@ -39,45 +39,12 @@
 ################################################################  core se offers
 
 - type: core
-  title: Hotel Otto
-  location: Berlin, Germany
-  description: Hip Berlin design hotel in upscale Charlottenburg
-  price: 78
-  price-description: per room per night
-  saved: 39
-  expires: 2020/01/27
-  image: https://secretescapes-web.imgix.net/sales/100313/4936f45b_7986_478b_b4d7_61e76413c4cf.jpg?auto=format,compress
-  link: https://www.secretescapes.com/hotel-otto-berlin-germany/sale
-
-- type: core
-  title: Mondrian Suites Hotel
-  location: Berlin, Germany
-  description: Chic Berlin apartment stay near Checkpoint Charlie
-  price: 86
-  price-description: per room per night
-  saved: 35
-  expires: 2020/02/03
-  image: https://secretescapes-web.imgix.net/sales/101822/2ae494c8_1da4_41f4_a150_299c14741f91.jpg?auto=format,compress
-  link: https://www.secretescapes.com/mondrian-suites-hotel-berlin-germany/sale
-
-- type: core
-  title: Almodóvar Hotel
-  location: Berlin, Germany
-  description: Creative Berlin pad east of the river
-  price: 95
-  price-description: per room per night
-  saved: 41
-  expires: 2020/01/27
-  image: https://secretescapes-web.imgix.net/sales/98917/8520273a_68bb_43b4_b125_67e2812d9d7e.jpg?auto=format,compress
-  link: https://www.secretescapes.com/almodovar-hotel-berlin-germany/sale
-
-- type: core
   title: Maritim proArte Hotel Berlin
   location: Berlin, Germany
   description: Modern art and design hotel in the heart of Berlin
-  price: 95
+  price: 93
   price-description: per room per night
-  saved: 41
+  saved: 43
   expires: 2020/02/03
   image: https://secretescapes-web.imgix.net/sales/31796/f1c2d053_ea65_42de_9423_a720118b45bf.jpg?auto=format,compress
   link: https://www.secretescapes.com/maritim-proarte-hotel-berlin-berlin-germany/sale
@@ -86,23 +53,67 @@
   title: Ruby Lilly Hotel Munich
   location: Munich, Germany
   description: Design-led Munich digs near the city centre
-  price: 95
+  price: 93
   price-description: per room per night
-  saved: 32
-  expires: 2020/02/03
-  image: https://secretescapes-web.imgix.net/sales/46766/538e3883_bb9f_4f2e_8b0c_89f14eed5db6.jpg?auto=format,compress
+  saved: 34
+  expires: 2020/02/10
+  image: https://secretescapes-web.imgix.net/sales/105013/9e141dfe_1d60_428a_a0f3_8c6c0db80c09.jpg?auto=format,compress
   link: https://www.secretescapes.com/ruby-lilly-hotel-munich-munich-germany-2/sale
 
 - type: core
   title: Charming Bavarian Alps holiday at a family-run bolthole
   location: Alpenhotel Wittelsbach, Germany
   description: Bavarian Alps getaway to a Small Elegant Hotels member
-  price: 580
+  price: 599
   price-description: per person. Based on 2 people for 7 nights
-  saved: 39
-  expires: 2020/03/23
+  saved: 41
+  expires: 2020/02/03
   image: https://secretescapes-web.imgix.net/sales/93652/469b31c1_51fa_4ff4_ab3e_6add5df43d5c.jpg?auto=format,compress
   link: https://www.secretescapes.com/charming-bavarian-alps-holiday-at-a-family-run-bolthole-alpenhotel-wittelsbach-germany/sale
+
+- type: core
+  title: Goodman's Living
+  location: Berlin, Germany
+  description: Modern self-catering apartment in historic Berlin
+  price: 66
+  price-description: per apartment per night
+  saved: 39
+  expires: 2020/02/10
+  image: https://secretescapes-web.imgix.net/sales/23472/e3ca26cb_7e1b_41f7_87d2_64a033a5f431.jpg?auto=format,compress
+  link: https://www.secretescapes.com/goodmans-living-berlin-germany/sale
+
+- type: core
+  title: NH Collection Berlin Mitte am Checkpoint Charlie
+  location: Berlin, Germany
+  description: Contemporary-chic spa hotel in the heart of Berlin
+  price: 96
+  price-description: per room per night
+  saved: 44
+  expires: 2020/02/10
+  image: https://secretescapes-web.imgix.net/sales/50610/139acb3d_e20b_431d_880a_fa0189a3231e.jpg?auto=format,compress
+  link: https://www.secretescapes.com/nh-collection-berlin-mitte-am-checkpoint-charlie-berlin-germany/sale
+
+- type: core
+  title: Park Hyatt Hamburg
+  location: Hamburg, Germany
+  description: Award-winning five-star Hamburg stay
+  price: 143
+  price-description: per room per night
+  saved: 57
+  expires: 2020/02/10
+  image: https://secretescapes-web.imgix.net/sales/46304/50e824da_854c_412c_ac0b_f09de69f06f3.jpg?auto=format,compress
+  link: https://www.secretescapes.com/park-hyatt-hamburg-hamburg-germany/sale
+
+- type: core
+  title: Titanic Gendarmenmarkt Berlin
+  location: Berlin, Germany
+  description: Elegant Berlin bliss in the old German State Opera building
+  price: 117
+  price-description: per room per night
+  saved: 32
+  expires: 2020/02/10
+  image: https://secretescapes-web.imgix.net/sales/16371/366f7b09_dab4_40b5_ad26_bad5c62b27cd.jpg?auto=format,compress
+  link: https://www.secretescapes.com/titanic-gendarmenmarkt-berlin-berlin-germany/sale
 
 
 ###############################################################  external offers
