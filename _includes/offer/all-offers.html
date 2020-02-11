@@ -7,6 +7,8 @@
         <div class="col">
         {% if offer.type == "core" %}
           {% include offer/offer.html %}
+        {% elsif offer.type == "core-tb" %}
+          {% include offer/offer-travelbird.html %}
         {% elsif offer.type == "external" %}
           {% include offer/offer-external.html %}
         {% else %}
