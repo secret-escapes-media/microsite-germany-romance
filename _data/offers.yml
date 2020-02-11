@@ -39,17 +39,6 @@
 ################################################################  core se offers
 
 - type: core
-  title: Ruby Lilly Hotel Munich
-  location: Munich, Germany
-  description: Design-led Munich digs near the city centre
-  price: 93
-  price-description: per room per night
-  saved: 34
-  expires: 2020/02/10
-  image: https://secretescapes-web.imgix.net/sales/105013/9e141dfe_1d60_428a_a0f3_8c6c0db80c09.jpg?auto=format,compress
-  link: https://www.secretescapes.com/ruby-lilly-hotel-munich-munich-germany-2/sale
-
-- type: core
   title: Goodman's Living
   location: Berlin, Germany
   description: Modern self-catering apartment in historic Berlin
@@ -67,7 +56,7 @@
   price: 143
   price-description: per room per night
   saved: 57
-  expires: 2020/02/17
+  expires: 2020/02/24
   image: https://secretescapes-web.imgix.net/sales/46304/50e824da_854c_412c_ac0b_f09de69f06f3.jpg?auto=format,compress
   link: https://www.secretescapes.com/park-hyatt-hamburg-hamburg-germany/sale
 
@@ -75,11 +64,11 @@
   title: KPM Hotel & Residences
   location: Berlin, Germany
   description: Hip new digs near Berlin’s city centre
-  price: 125
+  price: 117
   price-description: per room per night
   saved: 40
-  expires: 2020/02/17
-  image: https://secretescapes-web.imgix.net/sales/103244/42725f4b_c1e2_4ab5_ba73_18227d1f4c93.jpg?auto=format,compress
+  expires: 2020/02/24
+  image: https://secretescapes-web.imgix.net/sales/103244/5470f17d_944e_4604_b3f1_42696b5292ec.jpg?auto=format,compress
   link: https://www.secretescapes.com/kpm-hotel-and-residences-berlin-germany-1/sale
 
 - type: core
@@ -89,9 +78,54 @@
   price: 75
   price-description: per room per night
   saved: 52
-  expires: 2020/02/17
+  expires: 2020/02/24
   image: https://secretescapes-web.imgix.net/sales/65559/07e917af_2801_4a1c_8e9f_08a7dc535518.jpg?auto=format,compress
   link: https://www.secretescapes.com/hotel-berlin-berlin-berlin-germany/sale
+
+- type: core
+  title: Hyperion Hotel Berlin, Germany
+  location: Berlin, Germany
+  description: A classic Berlin pad with a roof terrace near Kurfürstendamm
+  price: 84
+  price-description: per room per night
+  saved: 54
+  expires: 2020/02/24
+  image: https://secretescapes-web.imgix.net/sales/95284/559d2a8d_83f2_47aa_a83b_03341c91ce8c.jpg?auto=format,compress
+  link: https://www.secretescapes.com/hyperion-hotel-berlin-germany/sale
+
+- type: core
+  title: Citadines Michel Hamburg
+  location: Hamburg, Germany
+  description: A sleek studio apartment near Hamburg’s Elbe River
+  price: 84
+  price-description: per studio per night
+  saved: 54
+  expires: 2020/02/24
+  image: https://secretescapes-web.imgix.net/sales/35992/1d059335_358d_4822_be5e_e2dd9f8255c1.jpg?auto=format,compress
+  link: https://www.secretescapes.com/citadines-michel-hamburg-hamburg-germany-3/sale
+
+- type: core
+  title: Steigenberger Hotel Am Kanzleramt
+  location: Berlin, Germany
+  description: Eco-friendly Berlin stay by Kurfürstendamm Avenue
+  price: 105
+  price-description: per room per night
+  saved: 25
+  expires: 2020/02/24
+  image: https://secretescapes-web.imgix.net/sales/104860/bc076721_7043_4281_be08_4bbb1d348b84.jpg?auto=format,compress
+  link: https://www.secretescapes.com/steigenberger-hotel-am-kanzleramt-berlin-germany/sale
+
+
+################################################################  core se travelbird offers
+
+- type: core-tb
+  title: Explore Berlin's vibrant culture
+  location: Germany
+  description: A versatile city trip exploring Berlin, including a hotel with breakfast, DDR Museum entrance, a Curry Wolf voucher and flights
+  price: 139
+  price-description: per person, based on 2 persons
+  image: https://travelbird-images.imgix.net/6a/61/6a61093c5f5f8cdc6822c892a2f2e30a?auto=compress%2Cformat&crop=faces%2Cedges%2Ccenter&fit=crop&h=459&w=640
+  link: https://co.uk.sales.secretescapes.com/115643/explore-berlins-vibrant-culture/
 
 
 ###############################################################  external offers
