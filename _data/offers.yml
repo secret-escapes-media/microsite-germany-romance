@@ -39,39 +39,6 @@
 ################################################################  core se offers
 
 - type: core
-  title: Goodman's Living
-  location: Berlin, Germany
-  description: Modern self-catering apartment in historic Berlin
-  price: 66
-  price-description: per apartment per night
-  saved: 39
-  expires: 2020/02/17
-  image: https://secretescapes-web.imgix.net/sales/23472/e3ca26cb_7e1b_41f7_87d2_64a033a5f431.jpg?auto=format,compress
-  link: https://www.secretescapes.com/goodmans-living-berlin-germany/sale
-
-- type: core
-  title: Park Hyatt Hamburg
-  location: Hamburg, Germany
-  description: Award-winning five-star Hamburg stay
-  price: 143
-  price-description: per room per night
-  saved: 57
-  expires: 2020/02/24
-  image: https://secretescapes-web.imgix.net/sales/46304/50e824da_854c_412c_ac0b_f09de69f06f3.jpg?auto=format,compress
-  link: https://www.secretescapes.com/park-hyatt-hamburg-hamburg-germany/sale
-
-- type: core
-  title: KPM Hotel & Residences
-  location: Berlin, Germany
-  description: Hip new digs near Berlin’s city centre
-  price: 117
-  price-description: per room per night
-  saved: 40
-  expires: 2020/02/24
-  image: https://secretescapes-web.imgix.net/sales/103244/5470f17d_944e_4604_b3f1_42696b5292ec.jpg?auto=format,compress
-  link: https://www.secretescapes.com/kpm-hotel-and-residences-berlin-germany-1/sale
-
-- type: core
   title: Hotel Berlin Berlin
   location: Berlin, Germany
   description: Chic Berlin hotel in the hip Mitte district
@@ -86,10 +53,10 @@
   title: Hyperion Hotel Berlin, Germany
   location: Berlin, Germany
   description: A classic Berlin pad with a roof terrace near Kurfürstendamm
-  price: 84
+  price: 76
   price-description: per room per night
   saved: 54
-  expires: 2020/02/24
+  expires: 2020/03/02
   image: https://secretescapes-web.imgix.net/sales/95284/559d2a8d_83f2_47aa_a83b_03341c91ce8c.jpg?auto=format,compress
   link: https://www.secretescapes.com/hyperion-hotel-berlin-germany/sale
 
@@ -97,10 +64,10 @@
   title: Citadines Michel Hamburg
   location: Hamburg, Germany
   description: A sleek studio apartment near Hamburg’s Elbe River
-  price: 84
+  price: 83
   price-description: per studio per night
   saved: 54
-  expires: 2020/02/24
+  expires: 2020/03/02
   image: https://secretescapes-web.imgix.net/sales/35992/1d059335_358d_4822_be5e_e2dd9f8255c1.jpg?auto=format,compress
   link: https://www.secretescapes.com/citadines-michel-hamburg-hamburg-germany-3/sale
 
@@ -111,7 +78,7 @@
   price: 105
   price-description: per room per night
   saved: 25
-  expires: 2020/02/24
+  expires: 2020/03/02
   image: https://secretescapes-web.imgix.net/sales/104860/bc076721_7043_4281_be08_4bbb1d348b84.jpg?auto=format,compress
   link: https://www.secretescapes.com/steigenberger-hotel-am-kanzleramt-berlin-germany/sale
 
